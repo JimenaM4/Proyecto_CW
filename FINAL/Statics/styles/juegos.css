@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contenedor
+{
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+}
+aside
+{
+    width: 17.5%;
+    background-color: #25282C;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#contcusu
+{
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    padding-top: 0;
+}
+
+#imgusu
+{
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+}
+#nusu
+{
+    color: white;
+    width: 50px;
+    height: 20px;
+    padding-top: 8px;
+    padding-left: 5px;
+    font-size: 10px;
+    float: left;
+}
+
+#xbox
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+#apxbox
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#letxbox
+{
+    height: 15px;
+    width: 53px;
+    position: absolute;
+    padding-top: 12.5px;
+}
+
+#fxbox
+{
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: #107c10;
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+#play
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+#applay
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#letplay
+{
+    height: 15px;
+    width: 68.2px;
+    position: absolute;
+    padding-top: 12.5px;
+    padding-left: 5px;
+}
+
+#fplay
+{
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: #003791;
+    border-radius: 20px;
+    line-height: 40px;
+}
+#pc
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+#appc
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#textpc
+{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#fpc
+{
+    width: calc(100% - 40px);
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    line-height: 40px;
+}
+
+
+#contenido
+{
+    width: 82.5%;
+    background-color: #2d3136;
+}

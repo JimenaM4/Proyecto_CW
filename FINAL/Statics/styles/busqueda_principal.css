@@ -1,0 +1,154 @@
+/*-----------------------------------FONDO------------------------------*/
+body{
+    background-image: url("../media/fondo_busquedas.jpg");
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*----------------------------------------------------------------------*/
+/*-------------------------BARRA DE NAVEGACION--------------------------*/
+#escudo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.prepa6{
+    position: absolute;
+    width: 3.75rem;
+    height: 1.1875rem;
+    left: 4%;
+    top: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 31.25rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 3.125rem;
+    left: 0rem;
+    top: 0rem;   
+}
+#nav{
+    background-color: #4777A7;
+}
+#btnBusc{
+    background-color: #537ca5;
+    border-color:#dde3e9;
+}
+#search{
+    width: 15rem;
+    height: 2.5rem;
+}
+#aRegistro{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color:#4777A7;
+}
+#aRegistro:active {
+    color: rgb(5, 4, 114);
+}
+.ayuda{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 70%;
+    top: 14%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.registrate{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 77%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.iniciaSesion{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 85%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+/*----------------------------------------------------------------------*/
+/*-------------------------------Comentarios----------------------------*/
+#comentario1{
+    position: absolute;
+    top:11%;
+    left: 18%;
+    text-align: center;
+}
+#lupa{
+    position: absolute;
+    left:39%;
+    top: 11%;
+}
+#comentario2{
+    position: absolute;
+    width: 25rem;
+    height: 4rem;
+    top: 34%;
+    left: 65%;
+    text-align: center;
+    color:#000000;
+}
+/*----------------------------------------------------------------------*/
+/*-------------------------------Formulario-----------------------------*/
+#forms{
+    position: absolute;
+    width: 25rem;
+    height: 29.5rem;
+    background-color: #FFFFFF;
+    left:15%;
+    top: 24%;
+    border-radius: 60px;
+}
+input{
+    border-radius: 20px;
+    border: 2px solid #000000;
+    padding: 3px;
+    width: 16rem;
+    height: 2rem;
+    z-index: 2;
+}
+input:focus{
+    background-color: #aeb8c2;
+}
+.boton{ 
+    border: 1px solid #4777A7; 
+    padding: 5px; 
+    background-color: #4777A7; 
+    color: #ffffff; 
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 500ms;
+}
+.boton:hover{
+    transform:scale(1.1);
+}
+/*----------------------------------------------------------------------*/
