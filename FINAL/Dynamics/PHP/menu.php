@@ -68,7 +68,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="../../Statics/media/fondo_inicio_sesion.jpg" class="d-block w-100" alt="biblioteca">
+                        <img src="../../Statics/media/fondo_inicio_sesion.jpg" class="d-block w-100" alt="biblioteca">
                     </div>
                     <div class="carousel-item">
                     <img src="../../Statics/media/imagen_pimponeras.jpg" class="d-block w-100" alt="pimponeras">
@@ -92,13 +92,17 @@
         </div>
     </p>
     <!-- Menú -->
-    <div>
+    <div id="Menu">
+        <!-- Para redireccionar es fácil, solo pones un a con href con la direccion del archivo, pero voy a intentar eficientarlo 
+        ya que solo lo agarra en una parte MUY especifica entonces para q lo agarre mucho mejor-->
         <h2 class=pregunta><strong>¿Qué quieres hacer?<strong></h2>
-        <img src="../../Statics/media/Juegos.jpeg" usemap="#juegos" class=juegos>
+        <img src="../../Statics/media/Juegos.jpeg" usemap="#juegos" class="juegos">
         <map name="juegos">
             <area target="_self" alt="Juegos" title="Juegos" href="#" coords="3,1,780,862" shape="rect">
         </map>
-        <img src="../../Statics/media/Busqueda.jpeg" usemap="#busqueda" class="busqueda">
+        <a href="../PHP/Busquedas_principal.php">
+            <img src="../../Statics/media/Busqueda.jpeg" usemap="#busqueda" class="busqueda">
+        </a>
         <map name="busqueda">
             <area target="_self" alt="busqueda" title="busqueda" href="#" coords="646,14,1,826" shape="rect">
         </map>
@@ -119,6 +123,8 @@
         <p id="nota">Ayudanos a mantener el sitio actualizado:</p>
         <p id="sello">@2023 enp6</p>
     </footer>
+
+
 
 </body>
 </html>
