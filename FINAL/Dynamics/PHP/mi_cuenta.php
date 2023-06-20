@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../statics/styles/mi_cuenta.css">
     <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="../../Dynamics/JS/decora.js"></script>
+    <script src="../../Dynamics/JS/decora.js"></script>c:\Xampp\htdocs\CW23\Proyecto_CW\FINAL\Statics\styles
     <title>Mi cuenta</title>
   </head>
   <body>
