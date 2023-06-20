@@ -1,0 +1,215 @@
+header{
+    position: absolute;
+    background-color: #4777A7;
+    width: 100%;
+    height: 3rem;
+    left: 0rem;
+    top: 0rem;
+}
+#escudo{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 1%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+#prepa6{
+    position: relative;
+    width: 3.75rem;
+    height: 1.1875rem;
+    left: 5%;
+    top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 31.25rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+#buscar{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    top: 25%;
+    left: 11%;
+    width: 200px;
+    height: 20px;
+    text-indent: 15%;
+    font-size: 0.8rem;
+}
+#lupa{
+    position: absolute;
+    width:10px;
+    height:10px;
+    left: 12%;
+    top: 40%;
+    z-index: 3;
+}
+a{
+    text-decoration: none;
+}
+#explora{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 60%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    z-index: 2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#i{
+    margin-top: 13px;
+}
+
+li{
+    display: none;
+    padding-top: 10px;
+    height: 30px;
+    list-style: none;
+    text-decoration: none;
+    background-color: #4777A7;
+    border-top:solid 2px hsl(0, 0%, 100%);
+}
+
+ul:hover > li {
+    display: block;
+}
+
+li:hover{
+    background-color: #8cb6e0;
+}
+
+#ayuda{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 69%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#linea{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 72%;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 1.5rem;
+    line-height: 0rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#regis{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 76%;
+    top: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#inse{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 83%;
+    top: 19px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#perfil{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 94%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+/*fondo*/
+body{
+    background-image: url(../media/prep_ven.jpg);
+}
+
+h1{
+    position: absolute;
+    top: 8%;
+    left: 380px;
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#recuadro{
+    position: absolute;
+    top: 20%;
+    left: 31%;
+    width: 40%;
+    height: 72%;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+}
+
+form{
+    left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-left: 3%;
+    padding-top: 2%;
+    line-height: 30px;
+}
+
+textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+}
+
+label{
+    left: 10%;
+}
+
+input{
+    border-radius: 50px;
+}
+
+#pre{
+    width: 50px;
+}
+
+button{
+    margin-inline-start: 25%;
+    margin-top: 19px;
+    width: 80px;
+    height: 20px;
+    background-color: #8cb6e0;
+    border: 1px solid #8cb6e0;
+}
+
+button:after > form{
+    display: none;
+}

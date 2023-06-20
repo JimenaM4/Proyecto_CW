@@ -1,0 +1,303 @@
+header{
+    position: absolute;
+    background-color: #4777A7;
+    width: 100%;
+    height: 3rem;
+    left: 0rem;
+    top: 0rem;
+}
+#escudo{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 1%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+#prepa6{
+    position: relative;
+    width: 3.75rem;
+    height: 1.1875rem;
+    left: 5%;
+    top: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 31.25rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+#buscar{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    top: 25%;
+    left: 11%;
+    width: 200px;
+    height: 20px;
+    text-indent: 15%;
+    font-size: 0.8rem;
+}
+#lupa{
+    position: absolute;
+    width:10px;
+    height:10px;
+    left: 12%;
+    top: 40%;
+    z-index: 3;
+}
+#explora{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 60%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    z-index: 2;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#i{
+    margin-top: 13px;
+}
+
+li{
+    display: none;
+    padding-top: 10px;
+    height: 30px;
+    list-style: none;
+    text-decoration: none;
+    background-color: #4777A7;
+    border-top:solid 2px hsl(0, 0%, 100%);
+}
+
+ul:hover > li {
+    display: block;
+}
+
+li:hover{
+    background-color: #8cb6e0;
+}
+
+
+#ayuda{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 69%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#linea{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 72%;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 1.5rem;
+    line-height: 0rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+#amigos{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 75%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#config{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 82%;
+    top: 13%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.8rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+#perfil{
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 94%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+/* body */
+body{
+    background-color: #e8e8e8;
+}
+
+aside{
+    position: absolute;
+    top: 5%;
+    line-height: 100px;
+    border-right: 1px solid #000000;
+    z-index: -5;
+    margin-right: 10px;
+    width: 17%;
+    height: 99%;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#perfi{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 5%;
+    text-indent: 40%;
+}
+
+#seg{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 24%;
+    text-indent: 40%;
+}
+
+#per{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 43%;
+    text-indent: 40%;
+}
+
+#priv{
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    top: 61%;
+    text-indent: 40%;
+}
+
+#cerrar{
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    top: 80%;
+    text-indent: 40%;
+}
+
+#cd{
+    position: absolute;
+    top: 13%;
+    left: 37%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+#consultad{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    top: 20%;
+    left: 37%;
+    width: 40%;
+    height: 30%;
+    box-shadow: 3px 5px #d4d2d2;
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 15px;
+}
+
+#contraseña{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(189, 191, 255);
+    width: 150px;
+    height: 15px;
+    top: 12%;
+    left: 23%;
+}
+
+#correo{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(189, 191, 255);
+    width: 150px;
+    height: 15px;
+    top: 37%;
+    left: 16%;
+}
+
+#telefono{
+    position: absolute;
+    z-index: 10;
+    background-color: rgb(189, 191, 255);
+    width: 150px;
+    height: 15px;
+    top: 62%;
+    left: 18%;
+}
+
+#consulta{
+    position: relative;
+    z-index: 10;
+    left: 83%;
+    border-color: #a1b4c7;
+    border-radius: 8px;
+}
+
+#ad{
+    position: absolute;
+    top: 53%;
+    left: 37%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+#actualizad{
+    position: absolute;
+    display:block;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    top: 60%;
+    left: 37%;
+    width: 40%;
+    height: 25%;
+    box-shadow: 3px 5px #d4d2d2;
+    line-height: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-indent: 10px;
+
+}
+.cambio{
+    border-top: 1px solid #000000;
+    padding-top: 0.5rem;
+}
