@@ -33,20 +33,22 @@
                             <ul class="dropdown-menu" id="nav">
                                 <li><a class="dropdown-item text-light" href="#">Comunidad</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-light" href="#">Ventas</a></li>
+                                <li><a class="dropdown-item text-light" href="ventas.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-light" href="#">Busquedas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-light" href="#">Objetos perdidos</a></li>
+                                <li><a class="dropdown-item text-light" href="Busquedas_principal.php">Objetos perdidos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-light" href="#">Juegos</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item text-light" href="../../Templates/Term_y_Cond.html">Terminos y condiciones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-light" href="#">Configuración</a></li>
                             </ul>       
                         </li>
                         <li class="nav-item"> 
-                        <a class="nav-link active text-light" aria-current="page" href="./inicio_sesion.php">inicia sesión</a>
+                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="./registro.php">registrate</a>
+                        <a class="nav-link text-light" href="../../Templates/registro.html">registrate</a>
                         </li>
                     </ul>
                 </div>
