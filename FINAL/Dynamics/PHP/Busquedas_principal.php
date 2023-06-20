@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../Statics/media/Escudo.png" type="image/png">
     <link rel="stylesheet" href="../../Statics/styles/busqueda_principal.css">
-    <link rel="stylesheet" href="../../../../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <script src="../../../../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
     <script src="../JS/busquedas_principal.js"></script>
     <title>Busquedas</title>
 </head> 
@@ -33,9 +33,7 @@
                             <ul class="dropdown-menu" id="nav">
                             <li><a class="dropdown-item text-dark" href="#">Comunidad</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-dark" href="#">Ventas</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-dark" href="#">Objetos perdidos</a></li>
+                                <li><a class="dropdown-item text-dark" href="ventas.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="#">Juegos</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -117,14 +115,14 @@
         {
             //header('LOCATION:./Busquedas_vista_previa.php');
             //echo "<script window.location.replace('./Busquedas_vista_previa.php')></script>";
-            echo "<meta http-equiv='refresh' content='10; url=./Busquedas_vista_previa.php'>";
+            echo "<meta http-equiv='refresh' content='0; url=./Busquedas_vista_previa.php'>";
         }
     }else {
         if(preg_match($title, $titulo)==1 && preg_match($desc, $descripcion)==1 && preg_match($place, $lugar)==1)
         {
             //header('LOCATION:./Busquedas_vista_previa.php');
             //echo "<script window.location.replace('./Busquedas_vista_previa.php')></script>";
-            echo "<meta http-equiv='refresh' content='10; url=./Busquedas_vista_previa.php'>";
+            echo "<meta http-equiv='refresh' content='0; url=./Busquedas_vista_previa.php'>";
         }
     }
 
