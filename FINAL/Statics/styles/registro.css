@@ -197,10 +197,21 @@ input:focus{
     font-size: 85%;
     z-index: 2;
 }
-/*-----------------------COMENTARIOS DE ERROR DE JS---------------------*/
-p{
-    height:0.5rem;
-    font-size: xx-small;
-    color:#4777A7;
+/*------------------------------------PHP-------------------------------*/
+#conten_error{
+    position: fixed;
+    top:36%;
+    left:29%;
+    width: 35rem;
+    height: 13rem;
+    background-color: rgba(200, 211, 223, 0.5);
+}
+#btn_error{
+    outline: none;
+    text-decoration: none;
+    transition: 500ms;
+}
+#btn_error:hover{
+    transform:scale(1.1);
 }
 /*----------------------------------------------------------------------*/
