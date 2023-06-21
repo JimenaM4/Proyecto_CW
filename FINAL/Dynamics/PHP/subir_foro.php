@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if ($foto['error'] === UPLOAD_ERR_OK) {
     $nombreTemp = $foto['tmp_name'];
     $nombreArchivo = $foto['name'];
-    $directorioDestino = 'foro/';
+    $directorioDestino = '../../libs/foros/';
     $destino = $directorioDestino . $nombreArchivo;
 
     // Crear el directorio de destino si no existe
@@ -17,6 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Mover la foto al directorio de destino
     if (move_uploaded_file($nombreTemp, $destino)) {
       echo 'La imagen se ha subido correctamente.';
+      
     } else {
       echo 'Error al mover el archivo.';
     }

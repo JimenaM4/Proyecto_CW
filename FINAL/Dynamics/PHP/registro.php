@@ -13,6 +13,7 @@
 <?php
     //comprobar que los valores existan
     require "./seguridad_hasheo.php";
+    require "./config.php";
     $nombre=(isset($_POST['nombre']) && $_POST["nombre"] != "")? $_POST['nombre'] : false;
     $numcuen=(isset($_POST['numdecuen']) && $_POST["numdecuen"] != "")? $_POST['numdecuen'] : false;
     $tel=(isset($_POST['telefono']) && $_POST["telefono"] != "")? $_POST['telefono'] : false;
@@ -36,6 +37,9 @@
         //     echo "Contraseña incorrecta";
         // } ES PARA VERIFICAR QUE LA CONTRASEÑA INGRESADA POR EL USUARIO SEA CORRECTA
         echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../index.html'>";
+        $sql="INSERT INTO proyecto(NOMBRE, PASS, numero_cuenta, grupo, num_telefono, usuario, nivel) 
+              VALUES('$nombre', '$contra', $numcuenta, $grupo, $tel, '$usuario', $nivel)";
+        $res=mysqli_query($conexion,$sql);
      }else {
         echo "<div align='center' id='conten_error'><h1 id='error'>Lo sentimos, no se pudo completar el registro, por favor ingresa de nuevo los datos</h1><br>
         <a class='boton' id='btn_error' align='center' href='../../Templates/registro.html'>Registrate</a></div>";
