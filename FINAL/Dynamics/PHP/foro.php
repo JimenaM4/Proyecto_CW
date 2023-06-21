@@ -29,7 +29,7 @@
             Ayuda
           </a>
           <ul class="dropdown-menu">
-            <li><a  class="dropdown-item" href="../../Dynamics/PHP/Termycondic.php">Terminos y condiciones</a></li>
+            <li><a  class="dropdown-item" href="../../Templates/Term_y_Cond.html">Terminos y condiciones</a></li>
             <li><a class="dropdown-item" href="../../Dynamics/PHP/creditos.php">Creditos</a></li>
           </ul>
         </li>
@@ -46,7 +46,7 @@
 </nav>
   <p class="titulo">Crea un foro para hablar con tus compañeros</p>
   <h1 class=comentario1>Recuerda que debes ser respetuoso y poder tener una relacion sana con todos tus compañeros.</h1>
-        <form action="../../Dynamics/PHP/subir_foro.php" method="POST" enctype="multipart/form-data" class="publicacion">
+        <form action="./subir_foro.php" method="POST" enctype="multipart/form-data" class="publicacion">
             <label>Título</label>
               <input type="text" required></input>
             <label>Tema de interés</label>
