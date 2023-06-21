@@ -4,7 +4,7 @@ window.addEventListener("load", ()=>{
     const foto = fotoInput.files[0];
     const allowedExtensions = /(\.jpg|\.jpeg|\.png)$/i;
     const maxSize = 5 * 1024 * 1024; // 5MB
-
+    
     if (!allowedExtensions.test(foto.name)) {
       alert('Solo se permiten archivos JPG, JPEG y PNG.');
       fotoInput.value = '';

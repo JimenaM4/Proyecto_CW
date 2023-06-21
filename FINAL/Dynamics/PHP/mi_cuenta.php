@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="icon" href="../../Statics/media/Escudo.png" type="image/png">
-    <link rel="stylesheet" href="../../statics/styles/mi_cuenta.css">
+    <link rel="stylesheet" href="../../Statics/styles/mi_cuenta.css">
     <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="../../Dynamics/JS/decora.js"></script>c:\Xampp\htdocs\CW23\Proyecto_CW\FINAL\Statics\styles
+    <script src="../../Dynamics/JS/decora.js"></script>
     <title>Mi cuenta</title>
   </head>
   <body>
@@ -55,12 +55,48 @@
       </div>
     </aside>
     <div class="foto">
-      <form action="../../Dynamics/PHP/upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="foto" id="foto">
-        <input type="submit" value="Subir foto">
-      </form>
+      <div class="fotoptions">
+        <form  action="./mi_cuenta.php" method="post" enctype="multipart/form-data">
+          <input type="file" multiple="multiple" accept="image/png, image, jpg, image/jpeg" name="foto">
+          <input type="submit" value="Subir foto">
+        </form>
+      </div>
     </div>
-      
+<?php
+  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $foto = $_FILES['foto'];
+
+    // Verificar si se subió correctamente
+    if ($foto['error'] === UPLOAD_ERR_OK) {
+      $nombreTemp = $foto['tmp_name'];
+      $nombreArchivo = $foto['name'];
+      $directorioDestino = '../../libs/pag/';
+      $destino = $directorioDestino . $nombreArchivo;
+      //$archroot = pathinfo($_FILES['foto'],PATHINFO_BASENAME);
+      // Crear el directorio de destino si no existe
+      if (!is_dir($directorioDestino)) {
+        mkdir($directorioDestino, 0777, true);
+      }
+
+      // Mover la foto a la carpeta de destino
+      if (move_uploaded_file($nombreTemp, $destino)) 
+      {
+        //echo 'La foto se ha subido correctamente.';
+        echo '
+               <div class="foto">
+                   <img class="crop" src="'.$destino.'"/>
+              </div>
+        ';
+      } 
+      else 
+      {
+        echo 'Error al mover el archivo.';
+      }
+    } else {
+      echo 'Error al subir la foto: ' . $foto['error'];
+    }
+  }
+?>  
     
   </body>
 </html>
