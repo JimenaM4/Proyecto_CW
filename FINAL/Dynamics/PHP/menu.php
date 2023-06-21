@@ -98,29 +98,29 @@
         <!-- Para redireccionar es fácil, solo pones un a con href con la direccion del archivo, pero voy a intentar eficientarlo 
         ya que solo lo agarra en una parte MUY especifica entonces para q lo agarre mucho mejor-->
         <h2 class=pregunta><strong>¿Qué quieres hacer?<strong></h2>
-        <a href="./juegos.php"> 
+        <a> 
             <img src="../../Statics/media/Juegos.jpeg" usemap="#juegos" class="juegos">
         </a>
         <map name="juegos">
             <area target="_self" alt="Juegos" title="Juegos" href="#" coords="3,1,780,862" shape="rect">
         </map>
-        <a href="../PHP/Busquedas_principal.php">
+        <a>
             <img src="../../Statics/media/Busqueda.jpeg" usemap="#busqueda" class="busqueda">   
         </a>
         <map name="busqueda">
-            <area target="_self" alt="busqueda" title="busqueda" href="#" coords="646,14,1,826" shape="rect">
+            <area target="_self" alt="busqueda" title="busqueda" href="./Busquedas_principal.php" coords="646,14,1,826" shape="rect">
         </map>
-        <a href="./ventas.php"> 
+        <a> 
              <img src="../../Statics/media/Compra_y_venta.jpeg" usemap="#compyven" class="comyven">
         </a>
         <map name="compyven">
-            <area target="_self" alt="Comyven" title="Comyven" href="#" coords="636,0,23,857" shape="rect">
+            <area target="_self" alt="Comyven" title="Comyven" href="./ventas.php" coords="636,0,23,857" shape="rect">
         </map>
-        <a href="#"> 
+        <a> 
             <img src="../../Statics/media/Comunidad.jpeg" usemap="#comunidad" class="comunidad">
         </a>
         <map name="comunidad">
-            <area target="_self" alt="Comunidad" title="Comunidad" href="#" coords="754,864,1,0" shape="rect">
+            <area target="_self" alt="Comunidad" title="Comunidad" href="./foro.php" coords="754,864,1,0" shape="rect">
         </map>
     </div>
     <!-- Pie de página -->

@@ -6,8 +6,8 @@
     <title>Foro enp6</title>
     <link rel="icon" href="../../Statics/media/Escudo.png" type="image/png">
     <link rel="stylesheet" href="../../Statics/styles/foro.css">
-    <link rel="stylesheet" href="../../bootstrap-5.3.0-dist/css/bootstrap.css">
-    <script src="../../bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
