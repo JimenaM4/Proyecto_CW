@@ -95,14 +95,12 @@
     </p>
     <!-- Menú -->
     <div id="Menu">
-        <!-- Para redireccionar es fácil, solo pones un a con href con la direccion del archivo, pero voy a intentar eficientarlo 
-        ya que solo lo agarra en una parte MUY especifica entonces para q lo agarre mucho mejor-->
         <h2 class=pregunta><strong>¿Qué quieres hacer?<strong></h2>
         <a> 
             <img src="../../Statics/media/Juegos.jpeg" usemap="#juegos" class="juegos">
         </a>
         <map name="juegos">
-            <area target="_self" alt="Juegos" title="Juegos" href="#" coords="3,1,780,862" shape="rect">
+            <area target="_self" alt="Juegos" title="Juegos" href="./juego.php" coords="3,1,780,862" shape="rect">
         </map>
         <a>
             <img src="../../Statics/media/Busqueda.jpeg" usemap="#busqueda" class="busqueda">   
