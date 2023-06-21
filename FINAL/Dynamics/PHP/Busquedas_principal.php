@@ -31,11 +31,11 @@
                                 Explorar
                             </a>
                             <ul class="dropdown-menu" id="nav">
-                            <li><a class="dropdown-item text-dark" href="#">Comunidad</a></li>
+                            <li><a class="dropdown-item text-dark" href="foro.php">Comunidad</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="ventas.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-dark" href="#">Juegos</a></li>
+                                <li><a class="dropdown-item text-dark" href="juego.php">Juegos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="menu.php">Menú principal</a></li>
                             </ul>       
