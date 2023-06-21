@@ -6,26 +6,50 @@
     <title>Ventas</title>
     <link rel="icon" href="../../Statics/media/Escudo.png" type="image/png">
     <link rel="stylesheet" href="../../Statics/styles/ventas.css"/>
+    <link rel="stylesheet" href="../../bootstrap/libs/bootstrap-5.3.0-dist/css/bootstrap.css">
+    <script src="../../bootstrap/libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
-<header>
-    <img id="escudo" src="../../Statics/media/Escudo.png" usemap="escudo" alt="escudo">
-    <a id="prepa6" href="https://www.prepa6.unam.mx/ENP6/_P6/">ENP6</a>
-    <input type="text" placeholder="Buscar en ENP6" id="buscar">
-    <button id="search">Buscar</button>
-    <img id="lupa" src="../../Statics/media/icono_lupa.png">
-    <p>
-        <ul id="explora">Explorar
-            <li id="i"><a href="">Comunidad</a></li>
-            <li><a href="./Busquedas_principal.php">Objetos perdidos</a></li>
-            <li><a href="">Juegos</a></li>
-            <li><a href="./menu.php">Menú principal</a></li>
-        </ul>
-    <p>
-    <p id="linea">|</p>
-    <a id="regis" href="../../Templates/registro.html">Regístrate</a>
-    <a id="inse" href="../../Templates/inicio_sesion.html">Inicia sesión</a>
-</header>
+<!-- Barra de navegacion -->
+<header class=barra>
+        <nav class="navbar navbar-expand-lg" id="nav">
+            <div class="container-fluid">
+                <img src="../../Statics/media/Escudo.png" alt="ENP6" width="30" height="24" class="d-inline-block align-text-top text-light" id="escudo">
+                <a class="navbar-brand text-light" href="https://www.prepa6.unam.mx/ENP6/_P6/">ENP6</a><br>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar en ENP6" aria-label="Search" id="search">
+                        <button class="btn btn-outline-success text-light" id="btnBusc" type="submit">Buscar</button>
+                </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" class="ayuda" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Explorar
+                            </a>
+                            <ul class="dropdown-menu" id="nav">
+                            <li><a class="dropdown-item text-dark" href="foro.php">Comunidad</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-dark" href="Busquedas_principal.php">Objetos perdidos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-dark" href="juego.php">Juegos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-dark" href="menu.php">Menú principal</a></li>
+                            </ul>       
+                        </li>
+                        <li class="nav-item"> 
+                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">inicia sesión</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link text-light" href="../../Templates/registro.html">registrate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
 <h1 id="tit">Vende o promociona tus productos</h1>
 <div id="recuadro">
     <form action="./ventas.php" method="post" enctype="multipart/form-data" target="_self">
