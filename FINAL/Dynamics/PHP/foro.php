@@ -19,10 +19,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../../Dynamics/PHP/inicio_sesion.php">Inicia sesión</a>
+          <a class="nav-link active" aria-current="page" href="../../index.html">Inicia sesión</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../../Dynamics/PHP/registro.php">Registrate</a>
+          <a class="nav-link" href="../../Templates/registro.html">Registrate</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -60,6 +60,6 @@
           <button type="submit" id="publicar">Publicar</button><br>
           <button type="reset" id="borrar">Borrar</button>
         </form>
-  <script src="foro.js"></script>
+  <script src="../JS/foro.js"></script>
 </body>
 </html>
