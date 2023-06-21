@@ -41,10 +41,10 @@
                             </ul>       
                         </li>
                         <li class="nav-item"> 
-                        <a class="nav-link active text-light" aria-current="page" href="./inicio_sesion.php">inicia sesión</a>
+                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="./registro.php">registrate</a>
+                        <a class="nav-link text-light" href="../../Templates/registro.html">registrate</a>
                         </li>
                     </ul>
                 </div>
