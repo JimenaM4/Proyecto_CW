@@ -147,3 +147,19 @@ input{
     transform:scale(1.1);
 }
 /*--------------------------------------------------------------------*/
+/*---------------------------VISTA PREVIA-----------------------------*/
+#vp{
+    display: none;
+    position: relative;
+    margin-top: 12%;
+    margin-left: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 10px;
+}
+#imgsub{
+    display: none;
+    position: absolute;
+    top: 33%;
+    left: 52%;
+}
+/*--------------------------------------------------------------------*/

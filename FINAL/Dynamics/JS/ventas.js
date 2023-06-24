@@ -1,13 +1,12 @@
-// function quitar(){
-//     document.getElementsById("tit").textContent= "Vista previa";
-//     document.getElementById("datos").style.display= "none";
-// }
+//vista previa
+/*const ocultarform = document.getElementById('continuar');
 
-// function despejar(){
-//     document.getElementById("submit").onclick=quitar;
-// }
+ocultarform.addEventListener('click',() => {
+    document.getElementsByTagName("form").style.display = 'none';
+    document.getElementById("vp").style.display = 'block';
+    document.getElementById("imgsub").style.display = 'block';
+});*/
 
-// window.onload=despejar;
 window.addEventListener("load", ()=>{
     const vend = document.getElementById("nombreV");
     const  produc = document.getElementById("producto");
@@ -32,7 +31,7 @@ window.addEventListener("load", ()=>{
         if(!produT){
             alert("Producto invalido: verifica que no tenga números y que no pase de los 25 carácteres");
         }
-        const desc = /^[\D\w]{5,150}$/i;
+        const desc = /^[\D\w]{5,20}$/i;
         //descripción de 5-150 carácteres, si acepta números
         const descrip = desc.test(descripcion.value);
         if(!descrip){
