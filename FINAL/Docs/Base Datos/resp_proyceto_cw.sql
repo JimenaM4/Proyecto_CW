@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.28-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: Proyecto_final
+-- Host: localhost    Database: proyecto_cw
 -- ------------------------------------------------------
 -- Server version	10.4.28-MariaDB
 
@@ -16,54 +16,33 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `contra`
+-- Table structure for table `foro`
 --
 
-DROP TABLE IF EXISTS `contra`;
+DROP TABLE IF EXISTS `foro`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `contra` (
-  `Id_contra` int(11) NOT NULL,
-  `Id_usuario` int(11) DEFAULT NULL,
-  `Hash` varchar(100) DEFAULT NULL,
-  `Sal` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`Id_contra`),
-  KEY `Id_usuario` (`Id_usuario`),
-  CONSTRAINT `contra_ibfk_1` FOREIGN KEY (`Id_usuario`) REFERENCES `usuario` (`ID_usuario`)
+CREATE TABLE `foro` (
+  `ID_foro` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_usuario` int(11) DEFAULT NULL,
+  `Titulo` varchar(70) DEFAULT NULL,
+  `Tema` varchar(150) DEFAULT NULL,
+  `Descripcion` varchar(250) DEFAULT NULL,
+  `Preguntas` varchar(200) DEFAULT NULL,
+  `Img` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ID_foro`),
+  KEY `ID_usuario` (`ID_usuario`),
+  CONSTRAINT `foro_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `contra`
+-- Dumping data for table `foro`
 --
 
-LOCK TABLES `contra` WRITE;
-/*!40000 ALTER TABLE `contra` DISABLE KEYS */;
-/*!40000 ALTER TABLE `contra` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `foros`
---
-
-DROP TABLE IF EXISTS `foros`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `foros` (
-  `ID_FORO` int(11) NOT NULL AUTO_INCREMENT,
-  `Tema` varchar(50) DEFAULT NULL,
-  `Visibilidad` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID_FORO`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `foros`
---
-
-LOCK TABLES `foros` WRITE;
-/*!40000 ALTER TABLE `foros` DISABLE KEYS */;
-/*!40000 ALTER TABLE `foros` ENABLE KEYS */;
+LOCK TABLES `foro` WRITE;
+/*!40000 ALTER TABLE `foro` DISABLE KEYS */;
+/*!40000 ALTER TABLE `foro` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -74,13 +53,14 @@ DROP TABLE IF EXISTS `juegos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `juegos` (
-  `Nombre_juego` varchar(50) DEFAULT NULL,
-  `clasificacion` varchar(2) DEFAULT NULL,
-  `fecha_lanzamiento` date DEFAULT NULL,
-  `descripcion` varchar(200) DEFAULT NULL,
-  `imagen` longblob DEFAULT NULL,
-  `consola` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `ID_juego` int(11) NOT NULL AUTO_INCREMENT,
+  `Nombre_juego` varchar(100) DEFAULT NULL,
+  `clasificacion` varchar(20) DEFAULT NULL,
+  `fecha_lanzamiento` varchar(50) DEFAULT NULL,
+  `descripcion` varchar(250) DEFAULT NULL,
+  `consola` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID_juego`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +69,7 @@ CREATE TABLE `juegos` (
 
 LOCK TABLES `juegos` WRITE;
 /*!40000 ALTER TABLE `juegos` DISABLE KEYS */;
-INSERT INTO `juegos` VALUES ('LOL','2','2009-10-27','juego de estrategia por equipos,dos equipos se enfrentan para destruir la base del otro','league-of-legends.avif','pc'),('HALO','3','2001-11-15','franquicia de videojuegos de ciencia ficci?nse centra en una guerra interestelar entre la humanidad y una alianza teocr?tica de alien?genas','1366_2000.JPEG','xbox'),('Spider-man','2','2018-09-07','videojuego de acci?n y aventura basado en el popular superh?roe','JXJMXBFFVRG3TNJEVOQ342VESE.JFIF','playstation');
+INSERT INTO `juegos` VALUES (1,'League of Legends(LOL)','TEEN','Lanzamiento: 27 de octubre de 2009',' Es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro.','Consola: PC');
 /*!40000 ALTER TABLE `juegos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,17 +81,16 @@ DROP TABLE IF EXISTS `mensajes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `mensajes` (
-  `ID_mensaje` int(11) NOT NULL,
+  `ID_mensaje` int(11) NOT NULL AUTO_INCREMENT,
   `ID_usuario` int(11) DEFAULT NULL,
   `ID_foro` int(11) DEFAULT NULL,
-  `Contenido` varchar(200) DEFAULT NULL,
-  `Hora` int(6) DEFAULT NULL,
-  `likes` int(5) DEFAULT NULL,
+  `Contenido` varchar(500) DEFAULT NULL,
+  `Likes` int(10) DEFAULT NULL,
   PRIMARY KEY (`ID_mensaje`),
   KEY `ID_usuario` (`ID_usuario`),
   KEY `ID_foro` (`ID_foro`),
   CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`),
-  CONSTRAINT `mensajes_ibfk_2` FOREIGN KEY (`ID_foro`) REFERENCES `foros` (`ID_FORO`)
+  CONSTRAINT `mensajes_ibfk_2` FOREIGN KEY (`ID_foro`) REFERENCES `foro` (`ID_foro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -125,6 +104,36 @@ LOCK TABLES `mensajes` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `mensajesj`
+--
+
+DROP TABLE IF EXISTS `mensajesj`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `mensajesj` (
+  `ID_mensajej` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_usuario` int(11) DEFAULT NULL,
+  `ID_juego` int(11) DEFAULT NULL,
+  `Contenido` varchar(500) DEFAULT NULL,
+  `Likes` int(10) DEFAULT NULL,
+  PRIMARY KEY (`ID_mensajej`),
+  KEY `ID_usuario` (`ID_usuario`),
+  KEY `ID_juego` (`ID_juego`),
+  CONSTRAINT `mensajesj_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`),
+  CONSTRAINT `mensajesj_ibfk_2` FOREIGN KEY (`ID_juego`) REFERENCES `juegos` (`ID_juego`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `mensajesj`
+--
+
+LOCK TABLES `mensajesj` WRITE;
+/*!40000 ALTER TABLE `mensajesj` DISABLE KEYS */;
+/*!40000 ALTER TABLE `mensajesj` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `publicar_perdido`
 --
 
@@ -132,13 +141,15 @@ DROP TABLE IF EXISTS `publicar_perdido`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `publicar_perdido` (
-  `ID_usuario` int(11) NOT NULL,
-  `Nombre` varchar(50) DEFAULT NULL,
-  `Descripcion` varchar(100) DEFAULT NULL,
-  `Imagen` longblob DEFAULT NULL,
-  `Fecha_recuperacion` date DEFAULT NULL,
-  `recompensa` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ID_usuario`),
+  `ID_perdido` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_usuario` int(11) DEFAULT NULL,
+  `Titulo` varchar(70) DEFAULT NULL,
+  `Descripcion` varchar(250) DEFAULT NULL,
+  `Lugar` varchar(100) DEFAULT NULL,
+  `Recompensa` varchar(70) DEFAULT NULL,
+  `Img` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`ID_perdido`),
+  KEY `ID_usuario` (`ID_usuario`),
   CONSTRAINT `publicar_perdido_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -161,16 +172,14 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuario` (
   `ID_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  `NOMBRE` varchar(50) DEFAULT NULL,
-  `PASS` int(11) DEFAULT NULL,
-  `numero_cuenta` int(15) DEFAULT NULL,
-  `grupo` int(11) DEFAULT NULL,
+  `Hashe` varchar(500) DEFAULT NULL,
+  `Sal` varchar(50) DEFAULT NULL,
+  `Nombre` varchar(100) DEFAULT NULL,
+  `num_cuenta` int(15) DEFAULT NULL,
   `num_telefono` int(15) DEFAULT NULL,
   `usuario` varchar(50) DEFAULT NULL,
-  `nivel` int(5) DEFAULT NULL,
-  PRIMARY KEY (`ID_usuario`),
-  KEY `PASS` (`PASS`),
-  CONSTRAINT `usuario_ibfk_1` FOREIGN KEY (`PASS`) REFERENCES `contra` (`Id_contra`)
+  `grupo` int(10) DEFAULT NULL,
+  PRIMARY KEY (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -191,14 +200,19 @@ DROP TABLE IF EXISTS `ventas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `ventas` (
-  `ID_usuario` int(11) NOT NULL,
+  `ID_venta` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_usuario` int(11) DEFAULT NULL,
+  `Descripcion` varchar(250) DEFAULT NULL,
+  `Precio` varchar(70) DEFAULT NULL,
+  `Lugar` varchar(70) DEFAULT NULL,
+  `Img` varchar(200) DEFAULT NULL,
+  `Usuario` varchar(20) DEFAULT NULL,
+  `Hora1` varchar(20) DEFAULT NULL,
+  `Hora2` varchar(20) DEFAULT NULL,
+  `Telefono` varchar(20) DEFAULT NULL,
   `Nombre_producto` varchar(50) DEFAULT NULL,
-  `Descripcion` varchar(100) DEFAULT NULL,
-  `Precio` int(11) DEFAULT NULL,
-  `Tipo_producto` varchar(50) DEFAULT NULL,
-  `Fecha_disponibilidad` date DEFAULT NULL,
-  `Lugar_entrega` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ID_usuario`),
+  PRIMARY KEY (`ID_venta`),
+  KEY `ID_usuario` (`ID_usuario`),
   CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -221,4 +235,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-19 22:01:59
+-- Dump completed on 2023-06-25 13:18:54
