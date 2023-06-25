@@ -66,5 +66,13 @@
             <div class="apodo">Isaac</div>
         </div>
     </div>
+    <div class="creadores">
+         <div class="creator">
+            <div class="pic">
+                <img src="../../Statics/media/creditos/alexei.jfif" alt="pics" width="200" height="300">
+            </div>
+            <div class="apodo">Alexei</div>
+        </div>
+    </div>
 </body>
 </html>
