@@ -1,0 +1,198 @@
+/*---------------------------------FONDO------------------------------*/
+body{
+    background-image: url(../media/fondo_ventas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*--------------------------------------------------------------------*/
+/*------------------------BARRA DE NAVEGACION-------------------------*/
+#escudo{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.prepa6{
+    position: absolute;
+    width: 3.75rem;
+    height: 1.1875rem;
+    left: 4%;
+    top: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 31.25rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 3.125rem;
+    left: 0rem;
+    top: 0rem;   
+}
+#nav{
+    background-color: #4777A7;
+}
+#btnBusc{
+    background-color: #537ca5;
+    border-color:#dde3e9;
+}
+#search{
+    width: 15rem;
+    height: 2.5rem;
+}
+#aRegistro{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color:#4777A7;
+}
+#aRegistro:active {
+    color: rgb(5, 4, 114);
+}
+.ayuda{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 70%;
+    top: 14%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.registrate{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 77%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.iniciaSesion{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 85%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*--------------------------------------------------------------------*/
+/*------------------------------COMENTARIO----------------------------*/
+#tit{
+    color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 7rem;
+}
+/*--------------------------------------------------------------------*/
+/*-----------------------------FORMULARIO-----------------------------*/
+#recuadro{
+    width: 500px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+form{
+    left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-left: 3%;
+    padding-top: 2%;
+    line-height: 30px;
+}
+label{
+    left: 10%;
+}
+input{
+    border-radius: 50px;
+    width: 15rem;
+}
+.pre{
+    width: 7rem;
+}
+.boton{
+    border: 1px solid #4777A7; 
+    padding: 5px; 
+    background-color: #4777A7; 
+    color: #ffffff; 
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 500ms;
+}
+.boton:hover{
+    transform:scale(1.1);
+}
+/*--------------------------------------------------------------------*/
+
+@media(max-height:710px){
+
+    #tit{
+        color: #FFFFFF;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 7rem;
+    }
+    #recuadro{
+        width: 600px;
+        height: 400px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+/*------------------------------------PHP-------------------------------*/
+#conten_error{
+    position: fixed;
+    top:36%;
+    left:29%;
+    width: 35rem;
+    height: 13rem;
+    background-color: rgba(200, 211, 223, 0.5);
+}
+#btn_error{
+    outline: none;
+    text-decoration: none;
+    transition: 500ms;
+    background-color: #4777A7;
+    border-radius: 50px;
+    padding:10px;
+    color:white;
+}
+#btn_error:hover{
+    transform:scale(1.1);
+}
+/*----------------------------------------------------------------------*/

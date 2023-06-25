@@ -1,0 +1,256 @@
+/*-------------------------BARRA DE NAVEGACION--------------------------*/
+#escudo{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.prepa6{
+    position: absolute;
+    width: 3.75rem;
+    height: 1.1875rem;
+    left: 4%;
+    top: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 31.25rem;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 3.125rem;
+    left: 0rem;
+    top: 0rem;
+    box-shadow: 2px 15px 21px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 15px 21px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 15px 21px 2px rgba(0,0,0,0.75);
+    z-index: 3; 
+}
+#nav{
+    background-color: #000000;
+}
+#btnBusc{
+    border-color:#dde3e9;
+    background-color: #323333;
+}
+#search{
+    width: 15rem;
+    height: 2.5rem;
+}
+#aRegistro{
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color:#4777A7;
+}
+#aRegistro:active {
+    color: rgb(5, 4, 114);
+}
+.ayuda{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 70%;
+    top: 14%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.registrate{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 77%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+.iniciaSesion{
+    position: absolute;
+    width: 7.0625rem;
+    height: 1.9375rem;
+    left: 85%;
+    top: 35%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 43.75rem;
+    font-size: 0.75rem;
+    line-height: 0.8125rem;
+    text-align: center;
+    z-index: 2;
+    color: #FFFFFF;
+}
+/*----------------------------------------------------------------------*/
+/*-------------------------------BIENVENIDA-----------------------------*/
+.recuadro{
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    left: 0%;
+    top: 10%;
+    background-color: #4777A7;
+}
+.saludo{
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    left: 3%;
+    top: 18%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+    font-weight: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+.entrada{
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    left: 3%;
+    top: 33%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+    font-weight: 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+/*----------------------------------------------------------------------*/  
+/*------------------------------CARRUSEL--------------------------------*/
+#carrusel{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    left: 55%;
+    top:12%;
+    box-shadow: 5px 26px 39px -3px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 5px 26px 39px -3px rgba(0,0,0,0.68);
+    -moz-box-shadow: 5px 26px 39px -3px rgba(0,0,0,0.68);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner{
+    height: 200px;
+}
+/*----------------------------------------------------------------------*/  
+/*----------------------------------MENU--------------------------------*/
+.pregunta{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 48%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 2;
+    font-weight: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+.juegos{
+    position: absolute;
+    width: 15%;
+    height: 31%;
+    left: 10%;
+    top: 55%;
+    z-index:2;
+}
+.busqueda{
+    position: absolute;
+    width: 13%;
+    height: 31%;
+    left: 33%;
+    top: 55%;
+    z-index:2;
+}
+.comyven{
+    position: absolute;
+    width: 14%;
+    height: 31%;
+    left: 53.5%;
+    top: 55%;
+    z-index:2;
+}
+.comunidad{
+    position: absolute;
+    width: 14%;
+    height: 31%;
+    left: 76%;
+    top: 54%;
+    z-index:2;
+}
+/*----------------------------------------------------------------------*/ 
+/*---------------------------------FOOTER-------------------------------*/
+footer{
+    position: absolute;
+    width: 100%;
+    height: 8%; 
+    top: 92%;
+    background-color: rgb(0, 0, 0);
+}
+#escudo2{
+    position: relative;
+    width: 6%;
+    height: 90%;
+    left: 1%;
+    top: 5%;
+    border-radius: 50%;
+}
+#prepa{
+    position: absolute;
+    left: 6%;
+    top: 32%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 0.3rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    outline: none;
+    text-decoration: none;
+}
+#acerca{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 0.7rem;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+}
+#nota{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 0.7rem;
+    font-size: 0.7rem; 
+    color: #FFFFFF;
+}
+#sello{
+    position: absolute;
+    left: 92%;
+    top: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 0.7rem;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+}
+/*----------------------------------------------------------------------*/ 

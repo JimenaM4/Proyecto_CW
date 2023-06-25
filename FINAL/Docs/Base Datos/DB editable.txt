@@ -1,0 +1,75 @@
+CREATE TABLE usuario(
+	ID_usuario INT PRIMARY KEY AUTO_INCREMENT,
+	Hashe varchar(500),
+	Sal varchar(50),
+	Nombre varchar(100),
+	num_cuenta int(15),
+	num_telefono int(15),
+	usuario varchar(50),
+	grupo int(10)
+	);
+
+
+CREATE TABLE foro(
+	ID_foro INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	Titulo varchar(70),
+	Tema varchar(150),
+	Descripcion varchar(250),
+	Preguntas varchar(200),
+	Img varchar(200),
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario)
+	);
+
+CREATE TABLE mensajes(
+	ID_mensaje INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	ID_foro INT,
+	Contenido varchar(500),
+	Likes int(10),
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
+	FOREIGN KEY (ID_foro) REFERENCES foro(ID_foro)
+	);
+
+CREATE TABLE publicar_perdido(
+	ID_perdido INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	Titulo varchar(70),
+	Descripcion varchar(250),
+	Lugar varchar(100),
+	Recompensa varchar(70),
+	Img varchar(200),
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario)
+	);
+CREATE TABLE ventas(
+	ID_venta INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	Descripcion varchar(250),
+	Precio varchar(70),
+	Lugar varchar(70),
+	Img varchar(200),
+	Usuario varchar(20),
+	Hora1 varchar(20),
+	Hora2 varchar(20),
+	Telefono varchar(20),
+	Nombre_producto varchar(50),
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario)
+	);
+CREATE TABLE juegos(
+	ID_juego INT PRIMARY KEY AUTO_INCREMENT,
+	Nombre_juego varchar(100),
+	clasificacion varchar(20),
+	fecha_lanzamiento varchar(50),
+	descripcion varchar(250),
+	consola varchar(50)
+	);
+CREATE TABLE mensajesj(
+	ID_mensajej INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	ID_juego INT,
+	Contenido varchar(500),
+	Likes int(10),
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
+	FOREIGN KEY (ID_juego) REFERENCES juegos(ID_juego)
+	);
+	
