@@ -13,7 +13,7 @@
     <div class="creadores">
         <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/jime.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Jime.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Jime</div>
         </div>
@@ -21,7 +21,7 @@
     <div class="creadores">
         <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/yo.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Fer.jpeg" alt="pics" width="200" height="300">
              </div>
             <div class="apodo">Ferchis</div>
         </div>
@@ -29,7 +29,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/abi.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Abi.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Abi</div>
         </div>
@@ -37,7 +37,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/vela.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Vela.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Vela</div>
         </div>
@@ -45,7 +45,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/regi.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/regi.jfif" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Regi</div>
         </div>
@@ -53,7 +53,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/dabalo.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Daniel.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Dabalo</div>
         </div>
@@ -61,7 +61,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/isaac.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/Isaac.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Isaac</div>
         </div>
@@ -69,7 +69,7 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/alexei.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/alexei.jfif" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Alexei</div>
         </div>
