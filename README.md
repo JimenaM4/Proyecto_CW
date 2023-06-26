@@ -23,7 +23,7 @@ Además de los programas mencionados en la duración del Curso Web, no se maneja
 1. Copiar este repositorio en su dispositivo.
 2. Ingresar la carpeta "FINAL" dentro de la carpeta "php" dentro de la carpeta "htdocs" de la carpeta "XAMPP" en el dispositivo, siguiendo la siguiente ruta : **C:\XAMPP\htdocs\php**.
 3. Agrega a tu dispositivo la base de datos llamada "resp_proyceto_cw.sql" bajo el nombre de "proyecto_cw".
-4. Abrir el archivo php llamado "menu.php"en el navegador, este se encuentra dentro de la carpeta "FINAL", dentro de la carpeta "Dynamics" y después dentro de la carpeta "PHP".
+4. Abrir el archivo php llamado "index.html"en el navegador, este se encuentra dentro de la carpeta "FINAL".
 5. Empezar a usar el archivo y disfrutar de sus funciones.
 ## Instrucciones de uso
 ### Instrucciones para el usuario
