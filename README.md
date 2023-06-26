@@ -13,7 +13,7 @@ La página tiene como propósito el ayudar a la comunidad estudiantil con 3 func
 Gracias a las aplicaciones antes mencionadas permitimos facilitar varios procesos que se solían hacer dentro de páginas de Facebook y que ahora tienen su lugar con las herramientas necesarias para que esté lo mejor optimizado posible. Con esto ayudando tanto a la gente involucrada como a los que no están tan interesados al mantener limpios los canales de comunicación previamente empleados y tenerlos para otros posibles temas.
 
 ### Tecnologías utilizadas
-Principalmente, se utilizó de html para los maquetados y la cara de la página, se usó JavaScript para indicar eventos y generar alertas, Se usó php en todo el lado lógico y en la conexión y uso de los datos de la base de datos y por último se utilizó boostrap y CSS para el diseño de la página. 
+Principalmente, se utilizó html para los maquetados y la cara de la página, JavaScript para indicar eventos, generar alertas, sanitizar y hacer peticiones asíncronas, Se usó php en todo el lado lógico y en la conexión y uso de los datos de la base de datos y por último se utilizó boostrap y CSS para el diseño de la página. 
 
 ## Instrucciones de instalación
 
@@ -21,7 +21,7 @@ Principalmente, se utilizó de html para los maquetados y la cara de la página,
 Además de los programas mencionados en la duración del Curso Web, no se manejaron otros programas o aplicaciones.
 ### Pasos para instalación
 1. Copiar este repositorio en su dispositivo.
-2. Ingresar la carpeta "FINAL" dentro de la carpeta "php" dentro de la carpeta "htdocs" de la carpeta "XAMPP" en el dispositivo, siguiendo la siguiente ruta : **F:\XAMPP\htdocs\php**.
+2. Ingresar la carpeta "FINAL" dentro de la carpeta "php" dentro de la carpeta "htdocs" de la carpeta "XAMPP" en el dispositivo, siguiendo la siguiente ruta : **C:\XAMPP\htdocs\php**.
 3. Agrega a tu dispositivo la base de datos llamada "resp_proyceto_cw.sql" bajo el nombre de "proyecto_cw".
 4. Abrir el archivo php llamado "menu.php"en el navegador, este se encuentra dentro de la carpeta "FINAL", dentro de la carpeta "Dynamics" y después dentro de la carpeta "PHP".
 5. Empezar a usar el archivo y disfrutar de sus funciones.
