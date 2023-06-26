@@ -34,21 +34,21 @@ Al abrir el index mencionado en el apartado anterior, se te enviará a la págin
 >>* El número telefónico, este debe de contar con 10 dígitos
 >>* El grupo, este solo acepta valores del 410 al 669
 >>* El nombre del usuario, debe tener mínimo 3 caracteres y máximo 10
->>* La contraseña, esta debe de iniciar con letras y/o números y finalizar con caracteres especiales
+>>* La contraseña, esta debe de contar con 8 caracteres, iniciado con letras y/o números y finalizar con caracteres especiales
 
 Al iniciar sesión se te mandará a la página principal, en esta podrás revisar todas las funciones de la página y elegir la que prefieras.
 
 #### **EN EL CASO DE LA PÁGINA DE BÚSQUEDA**
-Te mostrará las publicaciones de objetos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá ingresar tus publicaciones, las publicaciones incluyen el nombre del objeto, la recompensa, donde se encontró y el número para ponerte en contacto con quien haya hecho la publicación.
+Te mostrará las publicaciones de objetos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá ingresar tus publicaciones, las publicaciones incluyen el nombre del objeto, una descripción del mismo, la recompensa (opcional), el lugar donde se perdió y la imagen del objeto (opcional).
 
 #### **EN EL CASO DE LA PÁGINA DE VENTAS** 
-Te mostrará las publicaciones de los productos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá ingresar tus publicaciones, las publicaciones incluyen el nombre del producto, el precio, el horario de venta, un mapa con el lugar donde se puede entregar y el número para ponerte en contacto con quien haya hecho la publicación.  
+Te mostrará las publicaciones de los productos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá crear nuevas publicaciones, las publicaciones incluyen el nombre del producto, su descripción, el precio, el horario de venta, un mapa con el lugar donde se puede entregar y el número para ponerte en contacto con quien haya hecho la publicación.  
 
 #### **EN EL CASO DE LA PÁGINA DE FOROS** 
-Te mostrará las publicaciones de los foros que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá ingresar tus publicaciones, las publicaciones incluyen el nombre del foro, el tema, una imagen representativa y la opción de unirte al foro.
+Te mostrará las publicaciones de los foros que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá crear nuevas publicaciones, las publicaciones incluyen el nombre del foro, el tema, una imagen representativa, descripcion y la posibilidad de poner comentarios, así como darle like.
 
 #### **EN EL CASO DE LA PÁGINA DE JUEGOS** 
-Te mostrará las publicaciones de los grupos de juegos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá ingresar tus publicaciones, las publicaciones incluyen el nombre del juego, una imagen temática, datos de los desarrolladores, fecha de la salida del juego y la clasificación de edad del mismo. 
+Te mostrará los comentarios que se hayan hecho sobre un juego preestablecido: "LOL", y te permitirá crear nuevos comentarios. 
 
 Además de esto, en el encabezado de la página tenemos un link para la página de la preparatoria (el escudo), una barra de búsqueda, un acceso directo a todas las funciones antes mencionadas y un par de espacios para iniciar sesión y para crear tu usuario.
 ### Instrucciones para el programador 
@@ -56,29 +56,32 @@ Los archivos donde aparecen las publicaciones están hechos en php
 
 Los formularios están hechos en html
 
-La parte de los botones y los eventos está en su mayoría realizado en los JavaScript
+La parte de los botones y los eventos está en su mayoría realizado con JavaScript
 
 ##### Sobre la organización de las carpetas
 
 * La carpeta Docs contiene la base de datos y los Wireframes del proyecto.
 * La carpeta Dynamics incluye los php y los JavaScript, cada uno de estos divididos en sus respectivas carpetas.
 * La carpeta Libs incluye los archivos de bootsrap.
-* La carpeta pruebas2 incluye archivos usados para hacer pruebas.
 * La carpeta Statics contiene las imágenes y los archivos CSS, repartidos en sus respectivas carpetas.
 * La carpeta Templates contienen los archivos html, los cuales son empleados para los formularios.
+* Fuera de todas las carpetas se encuentra el index.html, el cual será el primer archivo que se debe ejecutar.
 
 ## Créditos
 ### Desarrolladores
-* José Manuel Vela Gómez: Wireframes, Maquetado, diseño y funcionalidad de: Juegos, Resolución de errores en maquetados, Base de datos y contribuyó en la parte lógica de proyecto en general. 
-
-* Jimena Martínez Méndez: Maquetado, diseño y funcionalidad de: Formulario Inicio de sesión, Registro, Formulario de Objetos perdidos y contribuyó en la parte lógica del proyecto en general.  
-
-* Citlalli Abigail Peredo López: Normalización de base de datos. 
-
-* Fernanda Daniela Calzada Fuentes: Maquetado y diseño de: Formulario de Comunidad, Configuración, Términos y Condiciones, Créditos y Mapa interactivo. 
 
 * Alexei Ramírez Pedroza: Esta hermosa Documentación ;)
 
-* Regina García Portillo: Maquetado y diseño de: Formulario de Ventas. 
+* Citlalli Abigail Peredo López: Diagramas de entidad-relación de base de datos. 
 
-* Daniel Salvador Baca López: Organizó carpetas. 
+* Daniel Salvador Baca López: Organizó carpetas.
+
+* Fernanda Daniela Calzada Fuentes: Maquetado y diseño de: Formulario de Comunidad, Configuración, Términos y Condiciones, Créditos y Mapa interactivo. 
+
+* Isaac Arturo Urrutia Alfaro: Corrección de rutas.
+
+* Jimena Martínez Méndez: Maquetado, diseño y funcionalidad de: Formulario Inicio de sesión, Registro, Formulario de Objetos perdidos y contribuyó en la parte lógica del proyecto en general.  
+  
+* José Manuel Vela Gómez: Wireframes, Maquetado, diseño y funcionalidad de: Juegos, Resolución de errores en maquetados, Base de datos y contribuyó en la parte lógica de proyecto en general. 
+
+* Regina García Portillo: Maquetado y diseño de: Formulario de Ventas. 
