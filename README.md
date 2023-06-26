@@ -70,7 +70,7 @@ La parte de los botones y los eventos está en su mayoría realizado con JavaScr
 ## Créditos
 ### Desarrolladores
 
-* Alexei Ramírez Pedroza: Esta hermosa Documentación ;)
+* Alexei Ramírez Pedroza: Documentación.
 
 * Citlalli Abigail Peredo López: Diagramas de entidad-relación de base de datos. 
 
