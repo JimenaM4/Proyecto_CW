@@ -42,7 +42,7 @@
     $include= require "./config.php";
     $con = connect();
      
-     $sql = "INSERT INTO foro (ID_foro, ID_usuario, Titulo, Tema, Descripcion, Preguntas, Img) VALUES (NULL, $IDu,'$titulo', '$tema', '$descripcion', '$preguntas', '$ruta_final')";
+     $sql = "INSERT INTO foro (ID_foro, ID_usuario, Titulo, Tema, Descripcion, Preguntas, Img, Likes) VALUES (NULL, $IDu,'$titulo', '$tema', '$descripcion', '$preguntas', '$ruta_final', 0)";
      $resultado = mysqli_query($con, $sql);
      if($resultado){
       echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=./foro_general.php'>";

@@ -103,7 +103,7 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column;
 }
 
 
@@ -116,6 +116,8 @@ main
     margin-top: 6rem;
     background-color: #FFFFFF;
     width: 350px;
+    display: flex;
+    flex-direction:column-reverse;
 }
 
 .Foros
@@ -140,6 +142,40 @@ h2
 h5
 {
     font-size: 1rem;
+}
+
+#contlikes
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.corazon
+{
+    background-image: url(../media/foro/coralikeb.png);
+    width: 30px;
+    height: 30px;
+}
+.corazon:hover
+{
+    cursor: pointer;
+}
+/* .corazon:active
+{
+    background-image: url(../media/foro/coralikell.png);
+} */
+
+.comentarios
+{
+    background-image: url(../media/foro/mensajei.png);
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.comentarios:hover
+{
+    cursor: pointer;
 }
 
 #btn_nuevoForo

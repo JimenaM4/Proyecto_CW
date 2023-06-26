@@ -5,7 +5,7 @@
     {
         echo "No se puedo conectar la base";
     }else{
-        $sql =  "SELECT  ID_foro, Titulo, Tema, Descripcion, Preguntas, Img, Likes FROM foro";
+        $sql =  "SELECT Descripcion, Precio, Lugar, Img, Usuario, Hora1, Hora2, Telefono, Nombre_producto FROM ventas";
         $res = mysqli_query($conexion, $sql);
         $respuesta = [];
         while( $datos = mysqli_fetch_array($res)){
@@ -13,7 +13,5 @@
         }
         echo json_encode($respuesta);
     }
-
-    
 
 ?>

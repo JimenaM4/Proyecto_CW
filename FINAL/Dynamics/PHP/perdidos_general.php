@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
-    <link rel="stylesheet" href="../../Statics/styles/foro_general.css">
-    <script src="../JS/foro_general.js"></script>
-    <title>Comunidad</title>
+    <link rel="stylesheet" href="../../Statics/styles/perdidos_general.css">
+    <script src="../JS/perdidos_general.js"></script>
+    <title>Objetos Perdidos</title>
 </head>
 <body>
 <!-- Barra de navegacion -->
@@ -31,8 +31,6 @@
                             </a>
                             <ul class="dropdown-menu" id="nav">
                             <li><a class="dropdown-item text-dark" href="./foro_general.php">Comunidad</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-dark" href="./ventas_general.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="../../Templates/objetos_perdidos.html">Objetos perdidos</a></li>
                                 <li><hr class="dropdown-divider"></li>

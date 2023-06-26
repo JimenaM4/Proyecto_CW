@@ -33,7 +33,7 @@
                             <ul class="dropdown-menu" id="nav">
                                 <li><a class="dropdown-item text-light" href="./foro_general.php">Comunidad</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-light" href="ventas.php">Ventas</a></li>
+                                <li><a class="dropdown-item text-light" href="./ventas_general.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-light" href="../../Templates/objetos_perdidos.html">Objetos perdidos</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -106,13 +106,13 @@
             <img src="../../Statics/media/Busqueda.jpeg" usemap="#busqueda" class="busqueda">   
         </a>
         <map name="busqueda">
-            <area target="_self" alt="busqueda" title="busqueda" href="../../Templates/objetos_perdidos.html" coords="646,14,1,826" shape="rect">
+            <area target="_self" alt="busqueda" title="busqueda" href="./perdidos_general.php" coords="646,14,1,826" shape="rect">
         </map>
         <a> 
              <img src="../../Statics/media/Compra_y_venta.jpeg" usemap="#compyven" class="comyven">
         </a>
         <map name="compyven">
-            <area target="_self" alt="Comyven" title="Comyven" href="./ventas.php" coords="636,0,23,857" shape="rect">
+            <area target="_self" alt="Comyven" title="Comyven" href="./ventas_general.php" coords="636,0,23,857" shape="rect">
         </map>
         <a> 
             <img src="../../Statics/media/Comunidad.jpeg" usemap="#comunidad" class="comunidad">

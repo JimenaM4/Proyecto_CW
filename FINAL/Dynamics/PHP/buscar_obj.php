@@ -44,12 +44,12 @@
         if($Continuar=='3'){
             $sql = "INSERT INTO publicar_perdido(ID_perdido, ID_usuario, Titulo, Descripcion, Lugar, Recompensa, Img) VALUES (NULL,'$IDu', '$titulo', '$descripcion', '$lugar', '$recompensa', '$ruta_final')";
             if(mysqli_query($con, $sql)){
-                echo "Datos insertados correctamente";// que te redireccione a la pagina de comunidad :  echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../Templates/foro_general.html'>";
+                echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=./perdidos_general.php'>";// que te redireccione a la pagina de comunidad :  echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../Templates/foro_general.html'>";
             }
         }else if($Continuar=='2'){
             $sql = "INSERT INTO publicar_perdido(ID_perdido, ID_usuario, Titulo, Descripcion, Lugar, Recompensa, Img) VALUES (NULL,'$IDu', '$titulo', '$descripcion', '$lugar', NULL, '$ruta_final' )";
             if(mysqli_query($con, $sql)){
-                echo "Datos insertados correctamente";//que te redireccione a la pagina de comunidad :  echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../Templates/foro_general.html'>";
+                echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=./perdidos_general.php'>";//que te redireccione a la pagina de comunidad :  echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../Templates/foro_general.html'>";
             }
         }
     }else{

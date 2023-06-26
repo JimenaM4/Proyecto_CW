@@ -119,11 +119,19 @@ header{
 #forms{
     position: absolute;
     width: 25rem;
-    height: 29.5rem;
+    height: 23.5rem;
     background-color: #FFFFFF;
     left:15%;
     top: 24%;
     border-radius: 60px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+form
+{
+    width: 18rem;
 }
 input{
     border-radius: 20px;
