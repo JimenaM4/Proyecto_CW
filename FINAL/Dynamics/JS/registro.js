@@ -28,9 +28,9 @@ window.addEventListener("load", ()=>{
         if(!telT){
             alert("Número de teléfono invalido");
         }
-        const group = /^[4-6][1-6][0-9]$/i;
+        const group = /^[4-6][0-6][1-9]$/i;
         const grupT = group.test(grup.value);
-        //solo acepta grupos del 410 al 669
+        //solo acepta grupos del 401 al 669
         if(!grupT){
             alert("Grupo invalido");
         }
