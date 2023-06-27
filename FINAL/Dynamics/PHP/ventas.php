@@ -1,3 +1,4 @@
+<!--Este archivo inserta publicaciones de ventas a la base de datos-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +9,8 @@
   <title>Error</title>
 </head>
 <body>
-  
-</body>
-</html>
-
-
-
-<?php
+  <?php
+    //comprobacion de datos
     $nomprod=(isset($_POST['nomprod']) && $_POST["nomprod"] != "")? $_POST['nomprod'] : false;
     $descripcion=(isset($_POST['des']) && $_POST["des"] != "")? $_POST['des'] : false;
     $precio=(isset($_POST['precio']) && $_POST["precio"] != "")? $_POST['precio'] : false;
@@ -24,10 +20,10 @@
     $tel=(isset($_POST['tel']) && $_POST["tel"] != "")? $_POST['tel'] : false;
     $continuar=(isset($_POST['continuar']) && $_POST["continuar"] != "")? $_POST['continuar'] : false;
 
-
+    //recibe la imagen, y obtiene la ruta final para poder guardarla en la base de datos
     if (isset($_FILES["imagen"]))
     {
-        $arch = $_FILES["imagen"];//recive archivo
+        $arch = $_FILES["imagen"];//recibe archivo
         $name= $arch["name"];//obtiene el nombre del archivo : imagen.jpg
         $ruta_temporal = $arch["tmp_name"]; //$arch es un arreglo que tiene la ruta temporal de la imagen
         $ext = pathinfo($name, PATHINFO_EXTENSION); //saca la extencion del nombre : .jpg
@@ -39,9 +35,8 @@
         $ruta_final = "../../Statics/media/img_ventas/$nomuni.$ext";//ruta en la que se va a guardar
         rename($ruta_temporal, $ruta_final);//cambia la ruta temporal por la ruta final
    }
-    
 
-   
+    //inserta los datos a la base de datos
     $include = include("./config.php");
     $con= connect();
     session_start();

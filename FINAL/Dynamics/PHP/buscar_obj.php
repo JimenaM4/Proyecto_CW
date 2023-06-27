@@ -1,3 +1,4 @@
+<!--Archivo que crea una nueva publicacion de busqueda de objeto perdido-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,7 @@
   <title>Error</title>
 </head>
 <body>
-  
-</body>
-</html>
-<?php 
+  <?php 
   $titulo=(isset($_POST['titulo']) && $_POST["titulo"] != "")? $_POST['titulo'] : false;
   $descripcion=(isset($_POST['descripcion']) && $_POST["descripcion"] != "")? $_POST['descripcion'] : false;
   $lugar=(isset($_POST['lugar']) && $_POST["lugar"] != "")? $_POST['lugar'] : false;
@@ -57,3 +55,6 @@
         <a class='boton' id='btn_error' align='center' href='../../Templates/objetos_perdidos.html'>Publica en objetos perdidos</a></div>";
     }
 ?>
+</body>
+</html>
+

@@ -1,3 +1,4 @@
+<!--Este archivo despliega todas la publicaciones de ventas que hay registrados en la base de datos-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -52,12 +53,11 @@
     </header> 
     
     <main>
-    
-    
+    <!--Contenedor de publicaciones-->
     <div id="contpubli">
 
     </div>
-
+    <!--Boton que te redirecciona a crear nueva publicacion-->
     <div id="btn_nuevoForo"></div>
 
     <div id="mapa">
