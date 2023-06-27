@@ -5,7 +5,7 @@ window.addEventListener("load", ()=>{
     const acceder = document.getElementById("acceder");
 
     acceder.addEventListener("click", ()=>{
-    //sanitización
+    //sanitización REGEX
         const usuario = /^[a-z0-9_-]{3,10}$/i;
         const userT = usuario.test(user.value);
         //usuarios con letras y numeros, 3 caracteres minimo, 10 maximo
@@ -20,7 +20,7 @@ window.addEventListener("load", ()=>{
         }
         if(passwT && userT)
         {
-            acceder.value = 2;
+            acceder.value = 2;//si todos los regex son true
         }else acceder.value = 1;
     });
 });
