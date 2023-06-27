@@ -1,4 +1,5 @@
 window.addEventListener("load", ()=>{
+    //verifica las variables recibidas
     const titulo = document.getElementById("title");
     const descripcion = document.getElementById("describe");
     const tema= document.getElementById("topic");
@@ -32,7 +33,7 @@ window.addEventListener("load", ()=>{
             alert("Pregunta/Comentario invalido: verifica que no pase de los 200 carácteres");
         }
         if( tituloR && descripR && topic && preR){
-            publicar.value = 2;
+            publicar.value = 2;//si todos los regex son correctos 
         }else publicar.value = 1;
     });   
 });
