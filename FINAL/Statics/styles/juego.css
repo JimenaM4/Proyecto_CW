@@ -226,10 +226,89 @@ header{
 {
     margin-top: 20px;
     padding-bottom: 10px;
-    background-color: #58595b;
     border-radius: 20px;
     border: 1px solid #FFFFFF;
     color: white;
+    width: 500px;
+    background-image: url(../media/chatsjuegos/lolf.png);
+
+}
+.contlol
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#lol{
+    width: 300px;
+}
+
+#lollo
+{
+    width: 300px;
+}
+#lollo:hover
+{
+    scale: 1.3;
+    transition: 1000ms;
+}
+
+#mensajes
+{
+    margin-top: 25px;
+}
+
+#dimensaj
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction:column-reverse ;
+}
+
+.mensajj
+{
+    margin-top: 20px;
+    font-size: 20px;
+    width: 450px;
+    background-color: #25282C;
+    color: white;
+    border-radius: 5px;
+    border: solid black 1px;
+    display: flex;
+    align-items: center;
+}
+
+input
+{
+    border-radius: 10px;
+    width: 430px;
+    background-color: #25282C;
+    color: white;
+    height: 45px;
+}
+#btne
+{
+    border-radius: 10px;
+    background-color: #25282C;
+    color: white;
+    height: 45px;
+}
+.contm
+{
+    width: fit-content;
+    color: white;
+    font-size: 7px;
+    height: 10px;
+}
+
+#usua
+{
+    width: fit-content;
+    font-size: 15px;
+    color: aqua;
+    height: 10px;
 }
 
 
@@ -269,6 +348,7 @@ header{
         background-color: #58595b;
         border-radius: 20px;
         border: 1px solid #FFFFFF;
+        
     }
 
 }

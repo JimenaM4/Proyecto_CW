@@ -170,6 +170,13 @@ transition: 500ms;
 cursor: pointer;
 }
 
+#mapa
+{
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+}
+
 @media (max-height:710px){
 
     #contpubli

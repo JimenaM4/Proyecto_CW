@@ -161,3 +161,30 @@ scale: 1.1;
 transition: 500ms;
 cursor: pointer;
 }
+#mapa
+{
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+}
+
+@media (max-height:710px){
+
+    #contpubli
+    {
+        width: 233.33px;
+    }
+
+    h2
+    {
+        font-size: 0.8rem;
+    }
+
+    p
+    {
+        font-size: 0.8rem;
+        width:fit-content;
+        color: blue;
+        border-bottom:solid blue 1px;
+    }
+}

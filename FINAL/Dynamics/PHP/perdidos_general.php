@@ -60,6 +60,13 @@
 
     <div id="btn_nuevoForo"></div>
 
+    <div id="mapa">
+        <img src="../../Statics/media/minimap.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="_self" alt="MapaPN6" title="MapaPN6" href="./Mapa_perdidos.php" coords="1,1,299,204" shape="rect">
+            </map>
+    </div>  
+
     </main>
 </body>
 </html>

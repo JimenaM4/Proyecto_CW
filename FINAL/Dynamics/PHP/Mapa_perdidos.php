@@ -26,8 +26,8 @@
     <area target="_parent" alt="Canchitas" title="Canchitas" href="https://www.prepa6.unam.mx/ENP6/_P6/plantel/img/instalaciones/areas_deportivas6.jpg" coords="440,88,519,175" shape="rect">
 </map>
 
-    <div id='conten_error'><h1 id='error'>Regresar a ventas</h1><br>
-            <a class='boton' id='btn_error' align='center' href='./ventas_general.php'>Ventas</a></div>
+    <div id='conten_error'><h1 id='error'>Regresar a busquedas</h1><br>
+            <a class='boton' id='btn_error' align='center' href='./perdidos_general.php'>Buscar perdidos</a></div>
 
 </body>
 </html>

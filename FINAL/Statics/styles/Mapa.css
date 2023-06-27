@@ -1,0 +1,29 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a7a7a7;
+}
+
+#conten_error{
+    width: 300px;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn_error{
+    outline: none;
+    text-decoration: none;
+    width: 100px;
+    transition: 500ms;
+    background-color: #4777A7;
+    border-radius: 50px;
+    padding:10px;
+    color:white;
+}
+#btn_error:hover{
+    transform:scale(1.1);
+}
