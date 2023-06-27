@@ -45,7 +45,7 @@ Te mostrará las publicaciones de objetos que ya se hayan hecho, además que est
 Te mostrará las publicaciones de los productos que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá crear nuevas publicaciones, las publicaciones incluyen el nombre del producto, su descripción, el precio, el horario de venta, un mapa con el lugar donde se puede entregar y el número para ponerte en contacto con quien haya hecho la publicación.  
 
 #### **EN EL CASO DE LA PÁGINA DE FOROS** 
-Te mostrará las publicaciones de los foros que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá crear nuevas publicaciones, las publicaciones incluyen el nombre del foro, el tema, una imagen representativa, descripcion y la posibilidad de poner comentarios, así como darle like.
+Te mostrará las publicaciones de los foros que ya se hayan hecho, además que estará incluido un botón "+" que te permitirá crear nuevas publicaciones, las publicaciones incluyen el nombre del foro, el tema, una imagen representativa y descripcion.
 
 #### **EN EL CASO DE LA PÁGINA DE JUEGOS** 
 Te mostrará los comentarios que se hayan hecho sobre un juego preestablecido: "LOL", y te permitirá crear nuevos comentarios. 
