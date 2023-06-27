@@ -22,7 +22,7 @@ Además de los programas mencionados en la duración del Curso Web, no se maneja
 ### Pasos para instalación
 1. Clonar este repositorio en su dispositivo.
 2. Ingresar la carpeta "FINAL" dentro de la carpeta "php" dentro de la carpeta "htdocs" de la carpeta "XAMPP" en el dispositivo, siguiendo la siguiente ruta : **C:\XAMPP\htdocs\php**.
-3. Agrega a tu dispositivo la base de datos llamada "resp_proyceto_cw.sql" bajo el nombre de "proyecto_cw".
+3. Agrega a tu dispositivo la base de datos llamada "resp_proyecto_def.sql" bajo el nombre de "proyecto_cw".
 4. Abrir el archivo php llamado "index.html"en el navegador, este se encuentra dentro de la carpeta "FINAL".
 5. Empezar a usar el archivo y disfrutar de sus funciones.
 ## Instrucciones de uso
