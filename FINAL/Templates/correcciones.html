@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
     <script src="../Dynamics/JS/inicio_sesion.js"></script>
-    <title>Inicio de sesión</title>
-</head>
+    <title>Inicio de sesión</title> <!--este html se encarga de asignar los divs para la pagian de inicio -->
 <body> 
-    <header class=barra>
+    <header class=barra> <!--esta parte se encarga de el encabezado y sus funciones-->
         <nav class="navbar navbar-expand-lg" id="nav">
-            <div class="container-fluid">
+            <div class="container-fluid"><!--esta parte es para el boton con el simbolo de la prepa-->
                 <img src="../Statics/media/Escudo.png" alt="ENP6" width="30" height="24" class="d-inline-block align-text-top text-light" id="escudo">
                 <a class="navbar-brand text-light" href="https://www.prepa6.unam.mx/ENP6/_P6/">ENP6</a><br>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <form class="d-flex" role="search">
+                <form class="d-flex" role="search"><!--esta parte es para la barra de busqueda-->
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                         <button class="btn btn-outline-success text-light" id="btnBusc" type="submit">Search</button>
                 </form>
@@ -30,16 +29,16 @@
                             <a class="nav-link dropdown-toggle text-light" class="ayuda" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ayuda
                             </a>
-                            <ul class="dropdown-menu" id="nav">
+                            <ul class="dropdown-menu" id="nav"> <!--botones de terminos y condiciones y de créditos-->
                                 <li><a class="dropdown-item text-dark" href="#">Terminos y condiciones</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-dark" href="#">Creditos</a></li>
+                                <li><a class="dropdown-item text-dark" href="#">Créditos</a></li>
                             </ul>       
                         </li>
-                        <li class="nav-item"> 
+                        <li class="nav-item"> <!--boton para iniciar sesion-->
                         <a class="nav-link active text-light" aria-current="page" href="./inicio_sesion.php">inicia sesión</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item"> <!--boton para registrarse-->
                         <a class="nav-link text-light" href="./registro.php">registrate</a>
                         </li>
                     </ul>
@@ -48,6 +47,7 @@
         </nav>
     </header> 
 
+    <!--***********************************acaba el encabezado**************************************** -->
         <main>
         <div class="contsa">BIENVENIDO <br> a la 
             <br>comunidad de Prepa 6 <br>
@@ -58,7 +58,7 @@
                 <h1 class="comentario2"><strong>¡Hola de nuevo!</strong><h1>
                 <h4 class="comentario3">Conéctacte con tu comunidad</h4>
             </div>
-            <form  class= forms action="./inicio_sesion.php" method="post" target="_self">
+            <form  class= forms action="./inicio_sesion.php" method="post" target="_self"> <!--formulario para iniciar sesion-->
                 <div class=datos>
                     <label><input class="fomulario1" id="usuario" name="usuario" type="text" placeholder="Usuario" required></label><br>
                     <label><input class="fomulario1" id="contraseña" name="contraseña" type="password" placeholder="Contraseña" required></label><br>
