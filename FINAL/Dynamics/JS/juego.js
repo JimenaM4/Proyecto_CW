@@ -1,6 +1,6 @@
 const forogj = document.getElementById("forog");
-const dimensaj = document.getElementById("dimensaj")
-
+const dimensaj = document.getElementById("dimensaj");
+//peticion que te muestra los datos guardados en la base de datos sobre el juego
 fetch("../Dynamics/PHP/juego.php")
     .then((respuesta)=>{
         return respuesta.json();
@@ -26,7 +26,8 @@ fetch("../Dynamics/PHP/juego.php")
         else{
             console.log(input.value);
             datosForm= new FormData();
-            datosForm.append("input", `${input.value}`)
+            datosForm.append("input", `${input.value}`);
+            //peticion que incerta mensajes a la base de datos
             fetch("../Dynamics/PHP/insert_mensajes.php",
             {
                 method:"POST",
@@ -41,7 +42,7 @@ fetch("../Dynamics/PHP/juego.php")
         }
         
     });
-
+    //peticion que muestra los mensajes guardados en la base de datos
     fetch("../Dynamics/PHP/mensajes.php")
     .then((respuesta)=>{
         return respuesta.json();
