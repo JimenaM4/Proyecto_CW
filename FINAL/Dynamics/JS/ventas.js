@@ -1,13 +1,3 @@
-// function quitar(){
-//     document.getElementsById("tit").textContent= "Vista previa";
-//     document.getElementById("datos").style.display= "none";
-// }
-
-// function despejar(){
-//     document.getElementById("submit").onclick=quitar;
-// }
-
-// window.onload=despejar;
 window.addEventListener("load", ()=>{
     const vend = document.getElementById("nombreV");
     const  produc = document.getElementById("producto");
@@ -20,6 +10,7 @@ window.addEventListener("load", ()=>{
     const continuar = document.getElementById("continuar");
 
     continuar.addEventListener("click", ()=>{
+        //Sanitizacion REGEX
         const usuario = /^[a-z0-9_-]{3,10}$/i;
         const userT = usuario.test(vend.value);
         //usuarios con letras y numeros, 3 caracteres minimo, 10 maximo
@@ -63,7 +54,7 @@ window.addEventListener("load", ()=>{
             alert("Número de teléfono invalido");
         }
         if (userT && produT && descrip && preT && lug && horaU && horaD && telT){
-            continuar.value = 2;
+            continuar.value = 2;//en caso de que los regex sean true
         }else{
             continuar.value = 1;
         }
