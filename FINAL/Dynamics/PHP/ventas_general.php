@@ -1,4 +1,4 @@
-<!--Este archivo despliega todas la publicaciones (foros) que hay registrados en la base de datos-->
+<!--Este archivo despliega todas la publicaciones de ventas que hay registrados en la base de datos-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
