@@ -36,11 +36,11 @@ window.addEventListener("load", ()=>{
             }
             if (title && descrip && lugarB && recom)
             {
-                continuar.value = 3;
+                continuar.value = 3;//en caso de que haya recompensa
             }
         }else  if (title && descrip && lugarB)
         {
-           continuar.value = 2;
+           continuar.value = 2;//en caso de que no haya recompensa
         }
         
     });
