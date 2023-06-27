@@ -1,6 +1,7 @@
 window.addEventListener("load", ()=>{
     const div = document.getElementById("contpubli");
     const btn_nuevoForo = document.getElementById("btn_nuevoForo");
+    //petición que despliega las publicaciones registradas en la base de datos
         fetch("./desplegar_perdidos.php")
         .then((respuesta)=>{
             return respuesta.json();
@@ -20,6 +21,6 @@ window.addEventListener("load", ()=>{
             });
      });
      btn_nuevoForo.addEventListener("click", ()=>{
-         window.location.href = "../../Templates/objetos_perdidos.html";
+         window.location.href = "../../Templates/objetos_perdidos.html";//te redirecciona a crear nueva publicación
     });
 });
