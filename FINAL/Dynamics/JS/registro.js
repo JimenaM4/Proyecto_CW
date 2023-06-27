@@ -9,7 +9,7 @@ window.addEventListener("load", ()=>{
     const acceder = document.getElementById("entrar");
 
     acceder.addEventListener("click", ()=>{
-    //sanitización
+    //sanitización REGEX
         const name = /^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+(?:\s+[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+){1,5}(?:\s+[-\sa-zA-ZáéíóúÁÉÍÓÚüÜñÑ]+)?$/i;
         const nameT = name.test(nombre.value);
         //nombre completo, con espacios, recive mayusculas, minusculas y acéntos
@@ -49,7 +49,7 @@ window.addEventListener("load", ()=>{
 
         if(nameT && cuenT && telT && grupT && usuaT && passwT)
         {
-            acceder.value = 2; 
+            acceder.value = 2; //en caso de que los regex sean true
         }else acceder.value = 1;
     });
 });
