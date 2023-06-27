@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.28-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: proyecto_cw
+-- Host: localhost    Database: proyect_def
 -- ------------------------------------------------------
 -- Server version	10.4.28-MariaDB
 
@@ -116,6 +116,7 @@ CREATE TABLE `mensajesj` (
   `ID_juego` int(11) DEFAULT NULL,
   `Contenido` varchar(500) DEFAULT NULL,
   `Likes` int(10) DEFAULT NULL,
+  `Usuario` varchar(25) DEFAULT NULL,
   PRIMARY KEY (`ID_mensajej`),
   KEY `ID_usuario` (`ID_usuario`),
   KEY `ID_juego` (`ID_juego`),
@@ -235,4 +236,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-25 13:18:54
+-- Dump completed on 2023-06-26 19:50:15
