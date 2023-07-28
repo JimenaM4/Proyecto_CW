@@ -10,6 +10,7 @@
 </head>
 <body>
   <?php 
+  //recibe valores de las variables 
   $titulo=(isset($_POST['titulo']) && $_POST["titulo"] != "")? $_POST['titulo'] : false;
   $descripcion=(isset($_POST['descripcion']) && $_POST["descripcion"] != "")? $_POST['descripcion'] : false;
   $lugar=(isset($_POST['lugar']) && $_POST["lugar"] != "")? $_POST['lugar'] : false;

@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.28-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: proyect_def
+-- Host: localhost    Database: resp_proyecto_def
 -- ------------------------------------------------------
 -- Server version	10.4.28-MariaDB
 
@@ -30,6 +30,7 @@ CREATE TABLE `foro` (
   `Descripcion` varchar(250) DEFAULT NULL,
   `Preguntas` varchar(200) DEFAULT NULL,
   `Img` varchar(200) DEFAULT NULL,
+  `Likes` int(20) DEFAULT NULL,
   PRIMARY KEY (`ID_foro`),
   KEY `ID_usuario` (`ID_usuario`),
   CONSTRAINT `foro_ibfk_1` FOREIGN KEY (`ID_usuario`) REFERENCES `usuario` (`ID_usuario`)
@@ -60,7 +61,7 @@ CREATE TABLE `juegos` (
   `descripcion` varchar(250) DEFAULT NULL,
   `consola` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ID_juego`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +70,6 @@ CREATE TABLE `juegos` (
 
 LOCK TABLES `juegos` WRITE;
 /*!40000 ALTER TABLE `juegos` DISABLE KEYS */;
-INSERT INTO `juegos` VALUES (1,'League of Legends(LOL)','TEEN','Lanzamiento: 27 de octubre de 2009',' Es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro.','Consola: PC');
 /*!40000 ALTER TABLE `juegos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,6 +180,7 @@ CREATE TABLE `usuario` (
   `num_telefono` int(15) DEFAULT NULL,
   `usuario` varchar(50) DEFAULT NULL,
   `grupo` int(10) DEFAULT NULL,
+  `f_perfil` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -236,4 +237,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-06-26 19:50:15
+-- Dump completed on 2023-07-28 13:12:57
