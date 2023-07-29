@@ -30,7 +30,18 @@ CREATE TABLE mensajes(
 	Contenido varchar(500),
 	Likes int(10),
 	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
-	FOREIGN KEY (ID_foro) REFERENCES foro(ID_foro)
+	FOREIGN KEY (ID_foro) REFERENCES foro(ID_foro),
+	FechaHora CHAR(50) NOT NULL,
+	);
+
+CREATE TABLE mensajes_ventas(
+	ID_mensajeV INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	ID_venta INT,
+	contenido CHAR(250) NOT NULL,
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
+	FOREIGN KEY (ID_venta) REFERENCES ventas(ID_venta),
+	FechaHora CHAR(50) NOT NULL 
 	);
 
 CREATE TABLE publicar_perdido(
@@ -75,4 +86,6 @@ CREATE TABLE mensajesj(
 	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
 	FOREIGN KEY (ID_juego) REFERENCES juegos(ID_juego)
 	);
+
+INSERT INTO juegos VALUES (NULL, 'League of Legends(LOL)', 'TEEN','Lanzamiento: 27 de octubre de 2009', 'Es un juego de estrategia por equipos en el que dos equipos conformados por cinco poderosos campeones se enfrentan para destruir la base del otro.', 'Consola: PC');
 	
