@@ -5,7 +5,7 @@
     {
         echo "No se puedo conectar la base";
     }else{
-        $sql =  "SELECT Descripcion, Precio, Lugar, Img, Usuario, Hora1, Hora2, Telefono, Nombre_producto FROM ventas";
+        $sql =  "SELECT * FROM ventas";
         $res = mysqli_query($conexion, $sql);
         $respuesta = [];
         while( $datos = mysqli_fetch_array($res)){

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="../../Statics/styles/foro_general.css">
+    <link rel='icon' href='../../Statics/media/Escudo.png' type='image/png'>
     <script src="../JS/foro_general.js"></script>
     <title>Comunidad</title>
 </head>
