@@ -44,6 +44,17 @@ CREATE TABLE mensajes_ventas(
 	FechaHora CHAR(50) NOT NULL 
 	);
 
+CREATE TABLE mensajes_perdidos(
+	ID_mensajeP INT PRIMARY KEY AUTO_INCREMENT,
+	ID_usuario INT,
+	ID_perdido INT,
+	contenido CHAR(250) NOT NULL,
+	FOREIGN KEY (ID_usuario) REFERENCES usuario(ID_usuario),
+	FOREIGN KEY (ID_perdido) REFERENCES publicar_perdido(ID_perdido),
+	FechaHora CHAR(50) NOT NULL 
+	);
+
+
 CREATE TABLE publicar_perdido(
 	ID_perdido INT PRIMARY KEY AUTO_INCREMENT,
 	ID_usuario INT,
