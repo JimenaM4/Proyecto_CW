@@ -48,7 +48,7 @@
         if($continuar=='2'){
             $sql = "INSERT INTO ventas (ID_venta, ID_usuario, Descripcion, Precio, Lugar, Img, Usuario, Hora1, Hora2, Telefono, Nombre_producto) VALUES (NULL, $IDu, '$descripcion', '$precio', '$lugar', '$ruta_final', '$Usu', '$hora1', '$hora2', '$tel', '$nomprod' )";
         if(mysqli_query($con, $sql)){
-            echo "Datos insertados correctamente";//que te redireccione a la pagina de comunidad :  echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=../../Templates/foro_general.html'>";
+            echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=./ventas_general.php'>";
         }
         }else{
             echo "<div align='center' id='conten_error'><h1 id='error'>Lo sentimos, no se pudo crear la publicación, por favor ingresa de nuevo los datos</h1><br>
