@@ -6,12 +6,9 @@ window.addEventListener("load", ()=>{
         .then((respuesta)=>{
             return respuesta.json();
         }).then((datosJSON)=>{
-             console.log(datosJSON);
-       
              div.innerHTML = "";
              datosJSON.forEach((a)=>{
-                console.log(a);
-                div.innerHTML +=` <div class="Foros">
+                div.innerHTML +=` <div class="Foros" id="${a.ID_perdido}">
                                     <h1>${a.Titulo}</h1>
                                     <h2>${a.Descripcion}</h2>
                                     <h5>${a.Lugar}</h5>
@@ -22,5 +19,12 @@ window.addEventListener("load", ()=>{
      });
      btn_nuevoForo.addEventListener("click", ()=>{
          window.location.href = "../../Templates/objetos_perdidos.html";//te redirecciona a crear nueva publicación
+    });
+    div.addEventListener("click",(e)=>{
+        if(e.target.matches("div.Foros")){
+            const id = e.target.id;
+            console.log(id);
+            window.location.href = `./publicacion_perdido.php?id=${id}`;
+        }
     });
 });

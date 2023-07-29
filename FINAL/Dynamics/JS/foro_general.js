@@ -9,13 +9,8 @@ window.addEventListener("load", ()=>{
     .then((respuesta)=>{
         return respuesta.json();
     }).then((datosJSON)=>{
-        console.log(datosJSON);
-        
         div.innerHTML = "";
         datosJSON.forEach((a)=>{
-        console.log(a);
-        let like =a.Likes;
-        // let IDf =a.ID_foro;
         div.innerHTML +=` <div class="Foros" id="${a.ID_foro}">
                             <h1>${a.Titulo}</h1>
                             <h2>${a.Tema}</h2>
@@ -24,7 +19,6 @@ window.addEventListener("load", ()=>{
                             <img src="${a.Img}">
                             <div id="contlikes">
                                 <div class="corazon"></div>
-                                <!--<h2>${like}</h2>-->
                                 <div class="comentarios"></div>
                             </div>
                         </div>`;
@@ -38,34 +32,13 @@ window.addEventListener("load", ()=>{
     });
     
     div.addEventListener("click",(e)=>{
-        if(e.target.className=="corazon")
-        {
-            e.target.innerHTML=`<img class="corazon" src="${corazonll}">`;
-            // like++;
-            // console.log(like);
-            // fetch("./likes.php", {
-            //     datosForm = new FormData();
-            //     datosForm.append(like, IDf)
-            //     method: "POST",
-            //     body: datosForm
-            // }).then((respuesta)=>{
-            //     return respuesta.json();
-            // }).then ((datosJSON)=>{
-            //     alert(datosJSON.mensaje);
-            //     console.log(datosJSON);
-            // });
+        if(e.target.matches("div.Foros")){
+            const id = e.target.id;
+            console.log(id);
+            window.location.href = `./publicacion_foro.php?id=${id}`;
         }
-        // div.addEventListener("click",(e)=>{
-        //     if(e.target.className=="corazon")
-        //     {
-        //         e.target.innerHTML=`<img class="corazon" src="${corazonv}">`;
-        //     }
-        // });
-    });
-    div.addEventListener("click",(e)=>{
-        if(e.target.className=="comentarios")
-        {
-            console.log(e.currentTarget.getAttribute("id"));
+        if(e.target.matches("div.corazon")){
+            e.target.innerHTML=`<img class="corazon" src="${corazonll}">`;
         }
     });
 

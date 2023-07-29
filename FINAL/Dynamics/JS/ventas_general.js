@@ -6,12 +6,9 @@ window.addEventListener("load", ()=>{
     .then((respuesta)=>{
     return respuesta.json();
     }).then((datosJSON)=>{
-     console.log(datosJSON);
-    
      div.innerHTML = "";
      datosJSON.forEach((a)=>{
-        console.log(a);
-        div.innerHTML +=` <div class="Foros">
+        div.innerHTML +=` <div class="Foros" id="${a.ID_venta}">
                             <h1>${a.Nombre_producto}</h1>
                             <h2> Por: ${a.Usuario}</h2>
                             <div id="contd"
@@ -27,5 +24,12 @@ window.addEventListener("load", ()=>{
      });
      btn_nuevoForo.addEventListener("click", ()=>{
          window.location.href = "../../Templates/ventas.html";//te redirecciona a crear publicación de ventas
+    });
+    div.addEventListener("click",(e)=>{
+        if(e.target.matches("div.Foros")){
+            const id = e.target.id;
+            console.log(id);
+            window.location.href = `./publicacion_ventas.php?id=${id}`;
+        }
     });
 });
