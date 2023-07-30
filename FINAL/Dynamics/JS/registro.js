@@ -26,7 +26,8 @@ window.addEventListener("load", ()=>{
         const telT = phone.test(telefono.value);
         //10 digitos
         if(!telT){
-            alert("Número de teléfono invalido");
+            alert("Número de teléfono invalido.");
+            alert("Deben ser 10 digitos");
         }
         const group = /^[4-6][0-6][0-9]$/i;
         const grupT = group.test(grup.value);
@@ -38,13 +39,15 @@ window.addEventListener("load", ()=>{
         const usuaT = user.test(usu.value);
         //usuarios con letras y numeros, 3 caracteres minimo, 10 maximo
         if(!usuaT){
-            alert("Usuario invalido");
+            alert("Usuario invalido.");
+            alert ("Debe contener minimo 3 caracteres y maximo 10");
         }
         const pass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8}$/i;
         const passwT = pass.test(password.value);
         //contraseña (8 digitos) que inicie con letras y/o numeros y al final caracteres especiales, ejemplo: J1m3n4$3
         if(!passwT){
             alert("Contraseña invalida");
+            alert ("Deben ser 8 caracteres, que inicie con letras y/o número y contenga caracteres especiales");
         }
 
         if(nameT && cuenT && telT && grupT && usuaT && passwT)
