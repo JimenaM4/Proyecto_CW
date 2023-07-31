@@ -39,7 +39,7 @@ window.addEventListener('load', ()=> {
             const comen = com.test(mensaje.value);
             if(!comen){
                 alert("Mensaje invalido: verifica que no pase de los 250 carácteres");
-                window.location.href = `./publicacion_ventas.php?id=${id_publi.value}`;
+                window.location.reload()
             }else{
                 datosForm = new FormData(formulario_coment);
                 fetch("./mensaje_ventas.php",{
@@ -50,7 +50,7 @@ window.addEventListener('load', ()=> {
                 }).then((datosJSON)=>{
                     console.log(datosJSON.mensaje);
                     alert(datosJSON.mensaje);
-                    window.location.href = `./publicacion_ventas.php?id=${id_publi.value}`;
+                    window.location.reload()
                 });
             }
         });
