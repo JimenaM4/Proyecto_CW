@@ -39,10 +39,10 @@ window.addEventListener('load', ()=> {
             const comen = com.test(mensaje.value);
             if(!comen){
                 alert("Mensaje invalido: verifica que no pase de los 250 carácteres");
-                window.location.reload()
+                window.location.reload();
             }else{
                 datosForm = new FormData(formulario_coment);
-                fetch("./mensaje_foro.php",{
+                fetch("./mensajes_foro.php",{
                     method: 'POST',
                     body: datosForm
                 }).then((respuesta)=>{
@@ -50,7 +50,7 @@ window.addEventListener('load', ()=> {
                 }).then((datosJSON)=>{
                     console.log(datosJSON.mensaje);
                     alert(datosJSON.mensaje);
-                    window.location.reload()
+                    window.location.reload();//href=`./publicacion_foro.php?id=${id_publi.value}`;
                 });
             }
         });
