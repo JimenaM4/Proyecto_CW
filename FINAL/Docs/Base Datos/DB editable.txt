@@ -4,12 +4,15 @@ CREATE TABLE usuario(
 	Sal varchar(50),
 	Nombre varchar(100),
 	num_cuenta int(15),
-	num_telefono int(15),
+	num_telefono VARCHAR(10),
 	usuario varchar(50),
 	grupo int(10),
 	f_perfil varchar(250),
 	f_portada varchar(250)
 	);
+
+**ALTER TABLE usuario DROP COLUMN num_telefono;
+**ALTER TABLE usuario ADD num_telefono VARCHAR(10);
 
 
 CREATE TABLE foro(
