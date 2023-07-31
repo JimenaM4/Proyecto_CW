@@ -45,24 +45,57 @@
     <aside>
       <div class="opciones">
         <a href=""> <span class="texto"><img src="../../Statics/media/perfi.png" class="img"> Perfil</a><br>
-        <a href="../../Dynamics/PHP/inicio_sesion.php"> <span class="cerrar"><img src="../../Statics/media/cerrar.png" class="img">Cerrar sesión </a>
+        <a href="../../index.html"> <span class="cerrar"><img src="../../Statics/media/cerrar.png" class="img">Cerrar sesión </a>
       </div>
     </aside>
-    <div class="foto">
-      <form action="../../Dynamics/PHP/upload.php" method="post" enctype="multipart/form-data">
+    <div id="per_portada">
         <input type="file" name="portada" id="portada">
-        <input type="submit" value="Subir foto">
-      </form>
+        <input type="submit" id="Subir_portada">
     </div>
-    <div class="perfil">
-    <form action="../../Dynamics/PHP/upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="foto2" id="foto2">
-        <input type="submit" value="Subir foto">
-      </form>
+    <div id="perfil">
+        <input type="file" name="foto" id="foto">
+        <input type="submit" id="Subir_foto">
     </div>
-     <div class="datos" id="datosp">
+    <div class="datos" id="datosp">
+      <h1 >Datos personales</h1>
+
       
     </div> 
+    <button type="button" class="btn btn-primary" id="btn_editar">Actualizar</button>
+    <div id="cambios" style="display:none">
+        <h1>Actualiza tus datos</h1>
+        <form method="POST" id="formulario_actualizar">
+            <div id="datos_new_usu">
+                <label for="nombre">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" class="form-control" required>
+                </label>
+                <br><br>
+                <label for="telefono">
+                    <input type="number" id="telefono" name="telefono" placeholder="Teléfono" class="form-control" required>
+                </label>
+                <br><br>
+                <label for="num_cuenta">
+                    <input type="number" id="num_cuenta" name="num_cuenta" placeholder="num_cuenta" class="form-control" required>
+                </label>
+                <br><br>
+                <label for="grupo">
+                    <input type="number" id="grupo" name="grupo" placeholder="grupo" class="form-control" required>
+                </label>
+                <br><br>
+                <label for="usuario">
+                    <input type="text" id="usuario" name="usuario" placeholder="Usuario" class="form-control" required>
+                </label>
+                <br><br>
+                <label for="contrasena">
+                    <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" class="form-control" required>
+                    <img src="../../Statics/Media/eye-outline.svg" alt="ojo_abierto" width="30px" height="auto" id="ver_contra">
+                    <img src="../../Statics/Media/eye-off-outline.svg" alt="ojo_cerrado" width="30px" height="auto" id="no_ver_contra" style="display:none">
+                </label>
+                    <br><br>
+                <center><button class="boton" type="submit" id="actualizar" name="actualizar" value="0">Actualizar</button></center>
+            </div>
+        </form>
+    </div>
     
   </body>
 </html>

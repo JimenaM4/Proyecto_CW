@@ -21,7 +21,7 @@
         }
         SESSION_START();
         $IDu= $_SESSION["ID"];
-        $sql =  "UPDATE usuario SET f_perfil = '$ruta_final' WHERE ID_USUARIO = $IDu";
+        $sql =  "UPDATE usuario SET f_portada = '$ruta_final' WHERE ID_usuario = $IDu";
         $res = mysqli_query($conexion, $sql);
         if(!$res)
         {
