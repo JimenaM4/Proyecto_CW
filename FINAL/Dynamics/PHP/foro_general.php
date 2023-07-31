@@ -31,8 +31,6 @@
                                 Explorar
                             </a>
                             <ul class="dropdown-menu" id="nav">
-                            <li><a class="dropdown-item text-dark" href="./foro_general.php">Comunidad</a></li>
-                                <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="./ventas_general.php">Ventas</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-dark" href="../../Templates/objetos_perdidos.html">Objetos perdidos</a></li>
@@ -43,10 +41,10 @@
                             </ul>       
                         </li>
                         <li class="nav-item"> 
-                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">inicia sesión</a>
+                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">Inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="../../Templates/registro.html">registrate</a>
+                        <a class="nav-link text-light" href="../../Templates/registro.html">Registrate</a>
                         </li>
                     </ul>
                 </div>
