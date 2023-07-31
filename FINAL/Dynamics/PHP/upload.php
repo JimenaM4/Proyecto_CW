@@ -1,27 +1,28 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $foto = $_FILES['foto'];
-
-  // Verificar si se subió correctamente
-  if ($foto['error'] === UPLOAD_ERR_OK) {
-    $nombreTemp = $foto['tmp_name'];
-    $nombreArchivo = $foto['name'];
-    $directorioDestino = 'pag/';
-    $destino = $directorioDestino . $nombreArchivo;
-
-    // Crear el directorio de destino si no existe
-    if (!is_dir($directorioDestino)) {
-      mkdir($directorioDestino, 0777, true);
+if (isset($_FILES["portada"]))
+{
+    $arch = $_FILES["portada"];//recive archivo
+    $name= $arch["name"];//obtiene el nombre del archivo : imagen.jpg
+    $ruta_temporal = $arch["tmp_name"]; //$arch es un arreglo que tiene la ruta temporal de la imagen
+    $ext = pathinfo($name, PATHINFO_EXTENSION); //saca la extencion del nombre : .jpg
+    $nomuni = uniqid();
+    if (!file_exists("../../Statics/media/img_perfil"))//si la carpeta no existe, la crea
+    {
+        if (mkdir("../../Statics/media/img_perfil"));
     }
-
-    // Mover la foto a la carpeta de destino
-    if (move_uploaded_file($nombreTemp, $destino)) {
-      echo 'La foto se ha subido correctamente.';
-    } else {
-      echo 'Error al mover el archivo.';
-    }
-  } else {
-    echo 'Error al subir la foto: ' . $foto['error'];
-  }
+    $ruta_final = "../../Statics/media/img_perfil/$nomuni.$ext";//ruta en la que se va a guardar
+    rename($ruta_temporal, $ruta_final);//cambia la ruta temporal por la ruta final
 }
+$IDu= $_SESSION["ID"];
+
+    $include= require "./config.php";
+    $con = connect();
+
+     $sql = "INSERT INTO usuario (f_perfil) VALUES ("$ruta_final") WHERE ID_usuario=$IDu";
+     $resultado = mysqli_query($con, $sql);
+     if($resultado){
+      echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=./mi_cuenta.php'>";
+     }else{
+       echo "Error al actualizar foto";
+    }
 ?>
