@@ -36,11 +36,11 @@
          }
          else{
             echo "<div align='center' id='conten_error'><h1 id='error'>Lo sentimos, no se pudo iniciar sesión, por favor ingresa de nuevo los datos</h1><br>
-            <a class='boton' id='btn_error' align='center' href='../../Templates/inicio_sesion.html'>Inicia sesión</a></div>";
+            <a class='boton' id='btn_error' align='center' href='../../index.html'>Inicia sesión</a></div>";
          }
          //
      }else {
         echo "<div align='center' id='conten_error'><h1 id='error'>Lo sentimos, no se pudo iniciar sesión, por favor ingresa de nuevo los datos</h1><br>
-        <a class='boton' id='btn_error' align='center' href='../../Templates/inicio_sesion.html'>Inicia sesión</a></div>";
+        <a class='boton' id='btn_error' align='center' href='../../index.html'>Inicia sesión</a></div>";
      };
 ?>

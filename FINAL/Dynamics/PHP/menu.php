@@ -38,17 +38,19 @@
                                 <li><a class="dropdown-item text-light" href="../../Templates/objetos_perdidos.html">Objetos perdidos</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-light" href="../../Templates/juego.html">Juegos</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item text-light" href="../../Templates/Term_y_Cond.html">Terminos y condiciones</a></li>
+				                <li><hr class="dropdown-divider"></li>
+				                <li><a class="dropdown-item text-light" href="../../Templates/Term_y_Cond.html">Terminos y condiciones</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item text-light" href="./mi_cuenta.php">Configuración</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-light" href="../../Templates/creditos.html">Créditos</a></li>
                             </ul>       
                         </li>
                         <li class="nav-item"> 
-                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">inicia sesión</a>
+                        <a class="nav-link active text-light" aria-current="page" href="../../index.html">Inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="../../Templates/registro.html">registrate</a>
+                        <a class="nav-link text-light" href="../../Templates/registro.html">Registrate</a>
                         </li>
                     </ul>
                 </div>
