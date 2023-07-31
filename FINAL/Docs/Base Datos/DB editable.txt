@@ -7,7 +7,8 @@ CREATE TABLE usuario(
 	num_telefono int(15),
 	usuario varchar(50),
 	grupo int(10),
-	f_perfil varchar(250)
+	f_perfil varchar(250),
+	f_portada varchar(250)
 	);
 
 

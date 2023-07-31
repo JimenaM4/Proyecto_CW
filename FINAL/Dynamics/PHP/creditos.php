@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,17 +44,9 @@
     <div class="creadores">
          <div class="creator">
             <div class="pic">
-                <img src="../../Statics/media/creditos/creditos/regi.jfif" alt="pics" width="200" height="300">
+                <img src="../../Statics/media/creditos/creditos/regi.jpeg" alt="pics" width="200" height="300">
             </div>
             <div class="apodo">Regi</div>
-        </div>
-    </div>
-    <div class="creadores">
-         <div class="creator">
-            <div class="pic">
-                <img src="../../Statics/media/creditos/creditos/Daniel.jpeg" alt="pics" width="200" height="300">
-            </div>
-            <div class="apodo">Dabalo</div>
         </div>
     </div>
     <div class="creadores">
