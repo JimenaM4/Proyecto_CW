@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../statics/styles/mi_cuenta.css">
     <link rel="stylesheet" href="../../libs/bootstrap-5.3.0-dist/css/bootstrap.css">
     <script src="../../libs/bootstrap-5.3.0-dist/js/bootstrap.bundle.js"></script>
-    <script src="../../Dynamics/JS/decora.js"></script>c:\Xampp\htdocs\CW23\Proyecto_CW\FINAL\Statics\styles
+    <script src="../../Dynamics/JS/decora.js"></script>
     <title>Mi cuenta</title>
   </head>
   <body>
@@ -31,7 +31,7 @@
             Ayuda
           </a>
           <ul class="dropdown-menu">
-            <li><a  class="dropdown-item" href="../../Dynamics/PHP/Termycondic.php">Terminos y condiciones</a></li>
+            <li><a  class="dropdown-item" href="../../Templates/Term_y_Cond.html">Terminos y condiciones</a></li>
             <li><a class="dropdown-item" href="../../Dynamics/PHP/creditos.php">Creditos</a></li>
           </ul>
         </li>
@@ -39,28 +39,30 @@
           <a class="nav-link disabled">Configuración</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Busca algo" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
     </div>
   </div>
 </nav>
     <aside>
       <div class="opciones">
         <a href=""> <span class="texto"><img src="../../Statics/media/perfi.png" class="img"> Perfil</a><br>
-        <a href=""> <span class="texto"><img src="../../Statics/media/config.png" class="img"> Configuración</a><br>
-        <a href=""> <span class="texto"><img src="../../Statics/media/seg.png" class="img"> Seguridad</a><br>
-        <a href=""> <span class="cerrar"><img src="../../Statics/media/cerrar.png" class="img">Cerrar sesión </a>
+        <a href="../../Dynamics/PHP/inicio_sesion.php"> <span class="cerrar"><img src="../../Statics/media/cerrar.png" class="img">Cerrar sesión </a>
       </div>
     </aside>
     <div class="foto">
       <form action="../../Dynamics/PHP/upload.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="foto" id="foto">
+        <input type="file" name="portada" id="portada">
         <input type="submit" value="Subir foto">
       </form>
     </div>
+    <div class="perfil">
+    <form action="../../Dynamics/PHP/upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="foto2" id="foto2">
+        <input type="submit" value="Subir foto">
+      </form>
+    </div>
+     <div class="datos" id="datosp">
       
+    </div> 
     
   </body>
 </html>
