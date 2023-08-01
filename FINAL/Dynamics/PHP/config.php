@@ -2,7 +2,7 @@
     const DBHOST = "localhost";
     const DBUSER = "root";
     const PASSWORD= "";
-    const DB= "proyecto_cw";
+    const DB= "resp_proyecto_def";
 
 
     function connect(){

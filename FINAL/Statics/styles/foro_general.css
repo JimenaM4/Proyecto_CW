@@ -3,6 +3,10 @@ body{
         background-image:url(../media/imagen_totem.jpg);
         background-size:cover;
         background-repeat:no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
     }
 /*----------------------------------------------------------------------*/
 /*-------------------------BARRA DE NAVEGACION--------------------------*/
@@ -194,5 +198,46 @@ h5
     scale: 1.1;
     transition: 500ms;
     cursor: pointer;
+}
+
+#publi
+{
+    background-color: #FFFFFF;
+    margin-top: 5rem;
+    width: fit-content;
+    border-radius: 5px;
+    border: solid black 0.5px; 
+}
+
+#num_comen
+{
+    margin-top: 10px;
+    background-color: white;
+    width:fit-content;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#cont_comen
+{
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.comentario
+{
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#usuyc
+{
+    width: fit-content;
+}
+#hora
+{
+    width: fit-content;
 }
 

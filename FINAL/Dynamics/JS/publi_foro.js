@@ -73,8 +73,8 @@ window.addEventListener('load', ()=> {
             desp_coment.innerHTML = "";
             datosJSON.forEach((a)=>{
                 desp_coment.innerHTML +=` <div class="comentario" id="${a.ID_mensaje}">
-                                            <h5>${a.usuario} dice: ${a.Contenido}</h5>
-                                            <h6>${a.FechaHora}</p>
+                                            <h5 id="usuyc">${a.usuario} dice: ${a.Contenido}</h5>
+                                            <h6 id="hora">${a.FechaHora}</p>
                                         </div>`;
             
             });

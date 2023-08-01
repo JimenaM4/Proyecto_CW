@@ -1,11 +1,8 @@
 window.addEventListener('load', ()=>{
-    const f_portada=document.getElementById("per_portada");
     const f_perfil=document.getElementById("foto");
     const perfil=document.getElementById("perfil");
     const datos=document.getElementById("datosp");
-    const portada=document.getElementById("portada");
     const Subir_foto=document.getElementById("Subir_foto");
-    const Subir_portada=document.getElementById("Subir_portada");
     const btn_editar=document.getElementById("btn_editar");
     const cambios=document.getElementById("cambios");
     const formulario_actualizar=document.getElementById("formulario_actualizar");
@@ -28,10 +25,6 @@ window.addEventListener('load', ()=>{
             if(a.f_perfil != null)
             {
                 perfil.innerHTML = `<img src="${a.f_perfil}" alt="Imagen de perfil" style="max-width: 300px; height: auto;" id="img">`;
-            }
-            if(a.f_portada != null)
-            {
-                f_portada.innerHTML = `<img src="${a.f_portada}" alt="Imagen de portada" style="max-width: 300px; height: auto;" id="img">`;
             }
             datos.innerHTML +=` <div class="datos" id="${a.ID_usuario}">
                                     <p>Nombre: ${a.Nombre}</p>
@@ -141,29 +134,6 @@ window.addEventListener('load', ()=>{
             datosForm = new FormData();
             datosForm.append("imagen", f_perfil.files[0]);
             fetch("./upload.php",{
-                method: 'POST',
-                body: datosForm
-            }).then((respuesta)=>{
-                return respuesta.json();
-            }).then((datosJSON)=>{
-                console.log(datosJSON.mensaje);
-                alert(datosJSON.mensaje);
-                window.location.reload();
-            });
-        }
-    });
-
-    //imagen de portada
-    Subir_portada.addEventListener("click",(e)=>{
-        const img = /(\w+\.(jpg|png|jpeg))$/i;
-        //imagen de extencion jpg, png o jpeg
-        const image = img.test(portada.value);
-        if(!image){
-            alert("Imagen invalida: verifica que sea jpg, png o jpeg");
-        }else{
-            datosForm = new FormData();
-            datosForm.append("imagen", portada.files[0]);
-            fetch("./subir_portada.php",{
                 method: 'POST',
                 body: datosForm
             }).then((respuesta)=>{

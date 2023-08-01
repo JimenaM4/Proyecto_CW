@@ -3,6 +3,10 @@ body{
     background-image: url(../media/fondo_ventas.jpeg);
     background-size:cover;
     background-repeat:no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
 }
 /*----------------------------------------------------------------------*/
 /*-------------------------BARRA DE NAVEGACION--------------------------*/
@@ -113,23 +117,19 @@ flex-direction: column;
 
 #contpubli
 {
-margin-top: 6rem;
-background-color: #ffffff00;
-width: 350px;
-display: flex;
-flex-direction: column-reverse;
-border-radius: 2rem;
-align-content: center;
+    margin-top: 6rem;
+    background-color: #FFFFFF;
+    width: 350px;
+    display: flex;
+    flex-direction:column-reverse;
+    border-radius: 5px;
 }
 
 .Foros
 {
-display: flex;
-flex-direction: column;
-border-bottom: solid black 3px;
-align-content: center;
-background-color: #fdf4c1;
-border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid black 3px;
 }
 
 
@@ -167,9 +167,6 @@ p
     color: blue;
     border-bottom:solid blue 1px;
     align-self: center;
-}
-img{
-    border-radius: 2rem;
 }
 
 #btn_nuevoForo
@@ -222,4 +219,48 @@ cursor: pointer;
         color: blue;
         border-bottom:solid blue 1px;
     }
+}
+
+
+
+/*-----------------------------------------------Diseño  comentarios de publicacion individual------------------------*/
+
+
+#publi
+{
+    background-color: #FFFFFF;
+    margin-top: 5rem;
+    border-radius: 5px;
+    border: solid black 0.5px; 
+}
+#img_focus
+{
+    margin-top: 5rem;
+}
+
+#num_comen
+{
+    margin-top: 10px;
+    background-color: white;
+    width:fit-content;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#cont_comen
+{
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.comentario
+{
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+h4
+{
+    width: fit-content;
 }
