@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.28-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: resp_proyecto_def
+-- Host: localhost    Database: proyecto_pro
 -- ------------------------------------------------------
 -- Server version	10.4.28-MariaDB
 
@@ -239,11 +239,11 @@ CREATE TABLE `usuario` (
   `Sal` varchar(50) DEFAULT NULL,
   `Nombre` varchar(100) DEFAULT NULL,
   `num_cuenta` int(15) DEFAULT NULL,
-  `num_telefono` int(15) DEFAULT NULL,
   `usuario` varchar(50) DEFAULT NULL,
   `grupo` int(10) DEFAULT NULL,
   `f_perfil` varchar(250) DEFAULT NULL,
   `f_portada` varchar(250) DEFAULT NULL,
+  `num_telefono` varchar(10) DEFAULT NULL,
   PRIMARY KEY (`ID_usuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -300,4 +300,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-30 14:32:22
+-- Dump completed on 2023-07-31 18:15:41
