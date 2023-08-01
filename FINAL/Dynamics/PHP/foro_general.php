@@ -44,7 +44,7 @@
                         <a class="nav-link active text-light" aria-current="page" href="../../index.html">Inicia sesión</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-light" href="../../Templates/registro.html">Registrate</a>
+                        <a class="nav-link text-light" href="../../Templates/registro.html">Regístrate</a>
                         </li>
                     </ul>
                 </div>
