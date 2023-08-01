@@ -12,11 +12,11 @@ window.addEventListener("load", ()=>{
                             <h1>${a.Nombre_producto}</h1>
                             <h2> Por: ${a.Usuario}</h2>
                             <div id="contd"
-                                <h2>Descripcion: ${a.Descripcion}</h2>
+                                <h2>Descripción: ${a.Descripcion}</h2>
                                 <h2>Precio: $${a.Precio}</h2>
                                 <h2>Lugar de entrega: ${a.Lugar}</h2>
                                 <h2>Horario: ${a.Hora1 } a ${a.Hora2} </h2>
-                                <h4> Contactame: <p>${a.Telefono}</p></h4>
+                                <h4> Contáctame: <p>${a.Telefono}</p></h4>
                             </div>
                             <img src="${a.Img}">
                         </div>`;
