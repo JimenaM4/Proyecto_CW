@@ -18,7 +18,7 @@ $input=(isset($_POST['input']) && $_POST["input"] != "")? $_POST['input'] : fals
             {
                 $respuesta = array("ok"=>false, "mensaje" => "No se pudo mandar el mensaje");
             } else{
-                $respuesta = array("ok"=>true, "mensaje" => "Se envio el mensaje");
+                $respuesta = array("ok"=>true, "mensaje" => "Se envió el mensaje");
             }
            
         }
