@@ -28,7 +28,7 @@ window.addEventListener('load', ()=>{
             }
             datos.innerHTML +=` <div class="datos" id="${a.ID_usuario}">
                                     <p>Nombre: ${a.Nombre}</p>
-                                    <p>Némero de cuenta: ${a.num_cuenta}</p>
+                                    <p>Número de cuenta: ${a.num_cuenta}</p>
                                     <p>Telefono: ${a.num_telefono}</p>
                                     <p>Usuario: ${a.usuario}</p>
                                     <p>Grupo: ${a.grupo}</p>
